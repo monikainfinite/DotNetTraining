@@ -1,0 +1,8 @@
+C:\Users\monikak\source\repos\movieticket\bin\Debug\movieticket.exe.config
+C:\Users\monikak\source\repos\movieticket\bin\Debug\movieticket.exe
+C:\Users\monikak\source\repos\movieticket\bin\Debug\movieticket.pdb
+C:\Users\monikak\source\repos\movieticket\obj\Debug\movieticket.csproj.AssemblyReference.cache
+C:\Users\monikak\source\repos\movieticket\obj\Debug\movieticket.csproj.CoreCompileInputs.cache
+C:\Users\monikak\source\repos\movieticket\obj\Debug\movieticket.exe
+C:\Users\monikak\source\repos\movieticket\obj\Debug\movieticket.pdb
+C:\Users\monikak\source\repos\movieticket\obj\Debug\movieticket.exe.config

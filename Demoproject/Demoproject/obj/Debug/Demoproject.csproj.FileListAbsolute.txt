@@ -1,0 +1,8 @@
+C:\Users\monikak\source\repos\Demoproject\Demoproject\bin\Debug\Demoproject.exe.config
+C:\Users\monikak\source\repos\Demoproject\Demoproject\bin\Debug\Demoproject.exe
+C:\Users\monikak\source\repos\Demoproject\Demoproject\bin\Debug\Demoproject.pdb
+C:\Users\monikak\source\repos\Demoproject\Demoproject\obj\Debug\Demoproject.csproj.AssemblyReference.cache
+C:\Users\monikak\source\repos\Demoproject\Demoproject\obj\Debug\Demoproject.csproj.CoreCompileInputs.cache
+C:\Users\monikak\source\repos\Demoproject\Demoproject\obj\Debug\Demoproject.exe
+C:\Users\monikak\source\repos\Demoproject\Demoproject\obj\Debug\Demoproject.pdb
+C:\Users\monikak\source\repos\Demoproject\Demoproject\obj\Debug\Demoproject.exe.config

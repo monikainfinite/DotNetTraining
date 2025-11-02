@@ -1,0 +1,8 @@
+C:\Users\monikak\source\repos\restaurant\bin\Debug\restaurant.exe.config
+C:\Users\monikak\source\repos\restaurant\bin\Debug\restaurant.exe
+C:\Users\monikak\source\repos\restaurant\bin\Debug\restaurant.pdb
+C:\Users\monikak\source\repos\restaurant\obj\Debug\restaurant.csproj.AssemblyReference.cache
+C:\Users\monikak\source\repos\restaurant\obj\Debug\restaurant.csproj.CoreCompileInputs.cache
+C:\Users\monikak\source\repos\restaurant\obj\Debug\restaurant.exe
+C:\Users\monikak\source\repos\restaurant\obj\Debug\restaurant.pdb
+C:\Users\monikak\source\repos\restaurant\obj\Debug\restaurant.exe.config

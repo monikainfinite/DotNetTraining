@@ -1,0 +1,7 @@
+C:\Users\monikak\source\repos\trafficlight\obj\Debug\trafficlight.csproj.AssemblyReference.cache
+C:\Users\monikak\source\repos\trafficlight\obj\Debug\trafficlight.csproj.CoreCompileInputs.cache
+C:\Users\monikak\source\repos\trafficlight\bin\Debug\trafficlight.exe.config
+C:\Users\monikak\source\repos\trafficlight\bin\Debug\trafficlight.exe
+C:\Users\monikak\source\repos\trafficlight\bin\Debug\trafficlight.pdb
+C:\Users\monikak\source\repos\trafficlight\obj\Debug\trafficlight.exe
+C:\Users\monikak\source\repos\trafficlight\obj\Debug\trafficlight.pdb

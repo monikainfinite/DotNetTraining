@@ -1,0 +1,8 @@
+C:\Users\monikak\source\repos\assessment\bin\Debug\assessment.exe.config
+C:\Users\monikak\source\repos\assessment\bin\Debug\assessment.exe
+C:\Users\monikak\source\repos\assessment\bin\Debug\assessment.pdb
+C:\Users\monikak\source\repos\assessment\obj\Debug\assessment.csproj.AssemblyReference.cache
+C:\Users\monikak\source\repos\assessment\obj\Debug\assessment.csproj.CoreCompileInputs.cache
+C:\Users\monikak\source\repos\assessment\obj\Debug\assessment.exe
+C:\Users\monikak\source\repos\assessment\obj\Debug\assessment.pdb
+C:\Users\monikak\source\repos\assessment\obj\Debug\assessment.exe.config
