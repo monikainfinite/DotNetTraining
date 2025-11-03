@@ -1,0 +1,8 @@
+C:\DotNetTraining\grocerySystem\bin\Debug\grocerySystem.exe.config
+C:\DotNetTraining\grocerySystem\bin\Debug\grocerySystem.exe
+C:\DotNetTraining\grocerySystem\bin\Debug\grocerySystem.pdb
+C:\DotNetTraining\grocerySystem\obj\Debug\grocerySystem.csproj.AssemblyReference.cache
+C:\DotNetTraining\grocerySystem\obj\Debug\grocerySystem.csproj.CoreCompileInputs.cache
+C:\DotNetTraining\grocerySystem\obj\Debug\grocerySystem.exe
+C:\DotNetTraining\grocerySystem\obj\Debug\grocerySystem.pdb
+C:\DotNetTraining\grocerySystem\obj\Debug\grocerySystem.exe.config

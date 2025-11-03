@@ -1,0 +1,7 @@
+C:\DotNetTraining\studentMarksEvaluation\bin\Debug\studentMarksEvaluation.exe.config
+C:\DotNetTraining\studentMarksEvaluation\bin\Debug\studentMarksEvaluation.exe
+C:\DotNetTraining\studentMarksEvaluation\bin\Debug\studentMarksEvaluation.pdb
+C:\DotNetTraining\studentMarksEvaluation\obj\Debug\studentMarksEvaluation.csproj.AssemblyReference.cache
+C:\DotNetTraining\studentMarksEvaluation\obj\Debug\studentMarksEvaluation.csproj.CoreCompileInputs.cache
+C:\DotNetTraining\studentMarksEvaluation\obj\Debug\studentMarksEvaluation.exe
+C:\DotNetTraining\studentMarksEvaluation\obj\Debug\studentMarksEvaluation.pdb
