@@ -44,7 +44,7 @@ namespace studentMarksEvaluation
                 grade = "F";
             }
         }
-        public void DisplayResult(string Name,int total,double average,string grade)
+        public void DisplayResult(int total,double average,string grade)
         {
             Console.WriteLine($"Name   : {Name}");
             Console.WriteLine($"Total Marks  : {total}");

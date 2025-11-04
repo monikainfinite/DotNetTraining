@@ -1,0 +1,8 @@
+C:\DotNetTraining\RideEasy_assessment\obj\Debug\RideEasy_assessment.csproj.AssemblyReference.cache
+C:\DotNetTraining\RideEasy_assessment\obj\Debug\RideEasy_assessment.csproj.CoreCompileInputs.cache
+C:\DotNetTraining\RideEasy_assessment\bin\Debug\RideEasy_assessment.exe.config
+C:\DotNetTraining\RideEasy_assessment\bin\Debug\RideEasy_assessment.exe
+C:\DotNetTraining\RideEasy_assessment\bin\Debug\RideEasy_assessment.pdb
+C:\DotNetTraining\RideEasy_assessment\obj\Debug\RideEasy_assessment.exe
+C:\DotNetTraining\RideEasy_assessment\obj\Debug\RideEasy_assessment.pdb
+C:\DotNetTraining\RideEasy_assessment\obj\Debug\RideEasy_assessment.exe.config

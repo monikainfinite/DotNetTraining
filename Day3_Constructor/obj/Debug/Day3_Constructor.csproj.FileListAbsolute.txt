@@ -1,0 +1,8 @@
+C:\DotNetTraining\Day3_Constructor\bin\Debug\Day3_Constructor.exe.config
+C:\DotNetTraining\Day3_Constructor\bin\Debug\Day3_Constructor.exe
+C:\DotNetTraining\Day3_Constructor\bin\Debug\Day3_Constructor.pdb
+C:\DotNetTraining\Day3_Constructor\obj\Debug\Day3_Constructor.csproj.AssemblyReference.cache
+C:\DotNetTraining\Day3_Constructor\obj\Debug\Day3_Constructor.csproj.CoreCompileInputs.cache
+C:\DotNetTraining\Day3_Constructor\obj\Debug\Day3_Constructor.exe
+C:\DotNetTraining\Day3_Constructor\obj\Debug\Day3_Constructor.pdb
+C:\DotNetTraining\Day3_Constructor\obj\Debug\Day3_Constructor.exe.config

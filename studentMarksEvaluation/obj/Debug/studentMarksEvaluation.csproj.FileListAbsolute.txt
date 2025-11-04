@@ -5,3 +5,4 @@ C:\DotNetTraining\studentMarksEvaluation\obj\Debug\studentMarksEvaluation.csproj
 C:\DotNetTraining\studentMarksEvaluation\obj\Debug\studentMarksEvaluation.csproj.CoreCompileInputs.cache
 C:\DotNetTraining\studentMarksEvaluation\obj\Debug\studentMarksEvaluation.exe
 C:\DotNetTraining\studentMarksEvaluation\obj\Debug\studentMarksEvaluation.pdb
+C:\DotNetTraining\studentMarksEvaluation\obj\Debug\studentMarksEvaluation.exe.config

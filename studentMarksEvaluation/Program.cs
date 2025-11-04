@@ -14,7 +14,7 @@ namespace studentMarksEvaluation
             Console.WriteLine("Enter no of students:");
             int noofStudents = Convert.ToInt32(Console.ReadLine());
             for (int i = 0; i < noofStudents; i++) {
-                Console.WriteLine($"\n enter details of student {i + 1}");
+                Console.WriteLine($"enter details of student {i + 1}");
                 student student = new student();
                 Console.WriteLine("Enter student name: ");
                 student.Name = Console.ReadLine();
@@ -25,8 +25,9 @@ namespace studentMarksEvaluation
                     student.subjectMarks[j] = Convert.ToInt32(Console.ReadLine());
                 }
                 student.CalculateResult(out int total, out double average, out string grade);
-                    student.DisplayResult(student.Name, total, average, grade);
+                    student.DisplayResult( total, average, grade);
                 }
+            Console.ReadLine();
             }
         }
 
