@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AE8C2D9B-0059-4446-9928-5CBF88657530}</ProjectGuid>
+    <ProjectGuid>{5B528C27-A217-478D-AF12-9421DF320C3C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Day5_DemoApp2</RootNamespace>
-    <AssemblyName>Day5_DemoApp2</AssemblyName>
+    <RootNamespace>Day6_DemoApp1</RootNamespace>
+    <AssemblyName>Day6_DemoApp1</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,9 +32,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject>Day5_DemoApp2.autoproperty</StartupObject>
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="autoproperty.cs" />
+    <Compile Include="employyeelist.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

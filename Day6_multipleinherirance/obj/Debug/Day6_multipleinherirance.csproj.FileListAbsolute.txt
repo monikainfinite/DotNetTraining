@@ -1,0 +1,7 @@
+C:\DotNetTraining\Day6_multipleinherirance\bin\Debug\Day6_multipleinherirance.exe.config
+C:\DotNetTraining\Day6_multipleinherirance\bin\Debug\Day6_multipleinherirance.exe
+C:\DotNetTraining\Day6_multipleinherirance\bin\Debug\Day6_multipleinherirance.pdb
+C:\DotNetTraining\Day6_multipleinherirance\obj\Debug\Day6_multipleinherirance.csproj.AssemblyReference.cache
+C:\DotNetTraining\Day6_multipleinherirance\obj\Debug\Day6_multipleinherirance.csproj.CoreCompileInputs.cache
+C:\DotNetTraining\Day6_multipleinherirance\obj\Debug\Day6_multipleinherirance.exe
+C:\DotNetTraining\Day6_multipleinherirance\obj\Debug\Day6_multipleinherirance.pdb

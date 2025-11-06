@@ -1,0 +1,8 @@
+C:\DotNetTraining\day6_DemoApp2\bin\Debug\day6_DemoApp2.exe.config
+C:\DotNetTraining\day6_DemoApp2\bin\Debug\day6_DemoApp2.exe
+C:\DotNetTraining\day6_DemoApp2\bin\Debug\day6_DemoApp2.pdb
+C:\DotNetTraining\day6_DemoApp2\obj\Debug\day6_DemoApp2.csproj.AssemblyReference.cache
+C:\DotNetTraining\day6_DemoApp2\obj\Debug\day6_DemoApp2.csproj.CoreCompileInputs.cache
+C:\DotNetTraining\day6_DemoApp2\obj\Debug\day6_DemoApp2.exe
+C:\DotNetTraining\day6_DemoApp2\obj\Debug\day6_DemoApp2.pdb
+C:\DotNetTraining\day6_DemoApp2\obj\Debug\day6_DemoApp2.exe.config

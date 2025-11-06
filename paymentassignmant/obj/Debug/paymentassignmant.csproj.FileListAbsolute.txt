@@ -1,0 +1,7 @@
+C:\DotNetTraining\paymentassignmant\obj\Debug\paymentassignmant.csproj.AssemblyReference.cache
+C:\DotNetTraining\paymentassignmant\obj\Debug\paymentassignmant.csproj.CoreCompileInputs.cache
+C:\DotNetTraining\paymentassignmant\bin\Debug\paymentassignmant.exe.config
+C:\DotNetTraining\paymentassignmant\bin\Debug\paymentassignmant.exe
+C:\DotNetTraining\paymentassignmant\bin\Debug\paymentassignmant.pdb
+C:\DotNetTraining\paymentassignmant\obj\Debug\paymentassignmant.exe
+C:\DotNetTraining\paymentassignmant\obj\Debug\paymentassignmant.pdb
