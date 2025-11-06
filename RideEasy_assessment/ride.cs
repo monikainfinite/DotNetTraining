@@ -42,7 +42,7 @@ namespace RideEasy_assessment
             ComputeBill(out decimal subtotal, out decimal gst, out decimal total, addOns);
 
             
-            decimal.TryParse("123", out _);
+            //decimal.TryParse("123", out _);
 
             decimal beforeCoupon = total;
             decimal couponAmount = 50m;

@@ -1,0 +1,8 @@
+C:\DotNetTraining\utilitybilling_assessement\bin\Debug\utilitybilling_assessement.exe.config
+C:\DotNetTraining\utilitybilling_assessement\bin\Debug\utilitybilling_assessement.exe
+C:\DotNetTraining\utilitybilling_assessement\bin\Debug\utilitybilling_assessement.pdb
+C:\DotNetTraining\utilitybilling_assessement\obj\Debug\utilitybilling_assessement.csproj.AssemblyReference.cache
+C:\DotNetTraining\utilitybilling_assessement\obj\Debug\utilitybilling_assessement.csproj.CoreCompileInputs.cache
+C:\DotNetTraining\utilitybilling_assessement\obj\Debug\utilitybilling_assessement.exe
+C:\DotNetTraining\utilitybilling_assessement\obj\Debug\utilitybilling_assessement.pdb
+C:\DotNetTraining\utilitybilling_assessement\obj\Debug\utilitybilling_assessement.exe.config

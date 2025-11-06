@@ -1,0 +1,8 @@
+C:\DotNetTraining\autocare_assignment\bin\Debug\autocare_assignment.exe.config
+C:\DotNetTraining\autocare_assignment\bin\Debug\autocare_assignment.exe
+C:\DotNetTraining\autocare_assignment\bin\Debug\autocare_assignment.pdb
+C:\DotNetTraining\autocare_assignment\obj\Debug\autocare_assignment.csproj.AssemblyReference.cache
+C:\DotNetTraining\autocare_assignment\obj\Debug\autocare_assignment.csproj.CoreCompileInputs.cache
+C:\DotNetTraining\autocare_assignment\obj\Debug\autocare_assignment.exe
+C:\DotNetTraining\autocare_assignment\obj\Debug\autocare_assignment.pdb
+C:\DotNetTraining\autocare_assignment\obj\Debug\autocare_assignment.exe.config
