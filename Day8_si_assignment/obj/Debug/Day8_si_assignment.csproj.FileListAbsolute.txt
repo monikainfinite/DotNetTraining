@@ -1,0 +1,7 @@
+C:\DotNetTraining\Day8_si_assignment\bin\Debug\Day8_si_assignment.exe.config
+C:\DotNetTraining\Day8_si_assignment\bin\Debug\Day8_si_assignment.exe
+C:\DotNetTraining\Day8_si_assignment\bin\Debug\Day8_si_assignment.pdb
+C:\DotNetTraining\Day8_si_assignment\obj\Debug\Day8_si_assignment.csproj.AssemblyReference.cache
+C:\DotNetTraining\Day8_si_assignment\obj\Debug\Day8_si_assignment.csproj.CoreCompileInputs.cache
+C:\DotNetTraining\Day8_si_assignment\obj\Debug\Day8_si_assignment.exe
+C:\DotNetTraining\Day8_si_assignment\obj\Debug\Day8_si_assignment.pdb

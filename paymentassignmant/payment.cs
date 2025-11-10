@@ -9,8 +9,8 @@ namespace paymentassignmant
      interface PaymentGateway
     {
         void Process(double amount);
-
     }
+
     public static class Helper {
         public static void Transcation(double amount)
         {

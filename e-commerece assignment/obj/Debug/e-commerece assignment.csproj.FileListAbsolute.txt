@@ -1,0 +1,8 @@
+C:\DotNetTraining\e-commerece assignment\bin\Debug\e-commerece assignment.exe.config
+C:\DotNetTraining\e-commerece assignment\bin\Debug\e-commerece assignment.exe
+C:\DotNetTraining\e-commerece assignment\bin\Debug\e-commerece assignment.pdb
+C:\DotNetTraining\e-commerece assignment\obj\Debug\e-commerece assignment.csproj.AssemblyReference.cache
+C:\DotNetTraining\e-commerece assignment\obj\Debug\e-commerece assignment.csproj.CoreCompileInputs.cache
+C:\DotNetTraining\e-commerece assignment\obj\Debug\e-commerece assignment.exe
+C:\DotNetTraining\e-commerece assignment\obj\Debug\e-commerece assignment.pdb
+C:\DotNetTraining\e-commerece assignment\obj\Debug\e-commerece assignment.exe.config
