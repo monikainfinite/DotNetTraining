@@ -42,7 +42,7 @@ namespace day8_assignment2log
     public class InternationalShipping : ShippingCalculator { 
      public override decimal Calculator(decimal weight, string zone)
         {
-            decimal baseRate = 200m;
+            decimal baseRate = 20m;
             decimal ratePerKg = zone == "US" ? 30m : 40m;
             return baseRate + (weight * ratePerKg);
 

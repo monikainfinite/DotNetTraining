@@ -1,0 +1,7 @@
+C:\DotNetTraining\Day10_assignmentRestaurant\bin\Debug\Day10_assignmentRestaurant.exe.config
+C:\DotNetTraining\Day10_assignmentRestaurant\bin\Debug\Day10_assignmentRestaurant.exe
+C:\DotNetTraining\Day10_assignmentRestaurant\bin\Debug\Day10_assignmentRestaurant.pdb
+C:\DotNetTraining\Day10_assignmentRestaurant\obj\Debug\Day10_assignmentRestaurant.csproj.AssemblyReference.cache
+C:\DotNetTraining\Day10_assignmentRestaurant\obj\Debug\Day10_assignmentRestaurant.csproj.CoreCompileInputs.cache
+C:\DotNetTraining\Day10_assignmentRestaurant\obj\Debug\Day10_assignmentRestaurant.exe
+C:\DotNetTraining\Day10_assignmentRestaurant\obj\Debug\Day10_assignmentRestaurant.pdb

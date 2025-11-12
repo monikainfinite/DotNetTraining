@@ -1,0 +1,8 @@
+C:\DotNetTraining\Day9_assignment_Minibankingsystem\bin\Debug\Day9_assignment_Minibankingsystem.exe.config
+C:\DotNetTraining\Day9_assignment_Minibankingsystem\bin\Debug\Day9_assignment_Minibankingsystem.exe
+C:\DotNetTraining\Day9_assignment_Minibankingsystem\bin\Debug\Day9_assignment_Minibankingsystem.pdb
+C:\DotNetTraining\Day9_assignment_Minibankingsystem\obj\Debug\Day9_assignment_Minibankingsystem.csproj.AssemblyReference.cache
+C:\DotNetTraining\Day9_assignment_Minibankingsystem\obj\Debug\Day9_assignment_Minibankingsystem.csproj.CoreCompileInputs.cache
+C:\DotNetTraining\Day9_assignment_Minibankingsystem\obj\Debug\Day9_assignment_Minibankingsystem.exe
+C:\DotNetTraining\Day9_assignment_Minibankingsystem\obj\Debug\Day9_assignment_Minibankingsystem.pdb
+C:\DotNetTraining\Day9_assignment_Minibankingsystem\obj\Debug\Day9_assignment_Minibankingsystem.exe.config
