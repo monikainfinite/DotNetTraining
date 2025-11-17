@@ -36,7 +36,7 @@ namespace utilitybilling_assessement
                 Console.WriteLine($"Tax Applied     :Rs.{tax}");
                 Console.WriteLine($"Net payable     :Rs.{netPayable}");
                 Console.WriteLine("Thankyou!");
-
+                Console.ReadLine();
             }
         }
     }

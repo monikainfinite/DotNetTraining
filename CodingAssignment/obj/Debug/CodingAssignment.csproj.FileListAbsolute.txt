@@ -1,0 +1,8 @@
+C:\DotNetTraining\CodingAssignment\bin\Debug\CodingAssignment.exe.config
+C:\DotNetTraining\CodingAssignment\bin\Debug\CodingAssignment.exe
+C:\DotNetTraining\CodingAssignment\bin\Debug\CodingAssignment.pdb
+C:\DotNetTraining\CodingAssignment\obj\Debug\CodingAssignment.csproj.AssemblyReference.cache
+C:\DotNetTraining\CodingAssignment\obj\Debug\CodingAssignment.csproj.CoreCompileInputs.cache
+C:\DotNetTraining\CodingAssignment\obj\Debug\CodingAssignment.exe
+C:\DotNetTraining\CodingAssignment\obj\Debug\CodingAssignment.pdb
+C:\DotNetTraining\CodingAssignment\obj\Debug\CodingAssignment.exe.config

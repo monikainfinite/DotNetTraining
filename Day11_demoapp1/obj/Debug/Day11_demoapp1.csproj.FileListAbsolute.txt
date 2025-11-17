@@ -1,0 +1,8 @@
+C:\DotNetTraining\Day11_demoapp1\bin\Debug\Day11_demoapp1.exe.config
+C:\DotNetTraining\Day11_demoapp1\bin\Debug\Day11_demoapp1.exe
+C:\DotNetTraining\Day11_demoapp1\bin\Debug\Day11_demoapp1.pdb
+C:\DotNetTraining\Day11_demoapp1\obj\Debug\Day11_demoapp1.csproj.AssemblyReference.cache
+C:\DotNetTraining\Day11_demoapp1\obj\Debug\Day11_demoapp1.csproj.CoreCompileInputs.cache
+C:\DotNetTraining\Day11_demoapp1\obj\Debug\Day11_demoapp1.exe
+C:\DotNetTraining\Day11_demoapp1\obj\Debug\Day11_demoapp1.pdb
+C:\DotNetTraining\Day11_demoapp1\obj\Debug\Day11_demoapp1.exe.config
