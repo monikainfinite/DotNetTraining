@@ -1,0 +1,9 @@
+C:\DotNetTraining\RemoteLib\bin\Debug\RemoteLib.dll
+C:\DotNetTraining\RemoteLib\bin\Debug\RemoteLib.pdb
+C:\DotNetTraining\RemoteLib\bin\Debug\RemotingTrm.dll
+C:\DotNetTraining\RemoteLib\bin\Debug\RemotingTrm.pdb
+C:\DotNetTraining\RemoteLib\obj\Debug\RemoteLib.csproj.AssemblyReference.cache
+C:\DotNetTraining\RemoteLib\obj\Debug\RemoteLib.csproj.CoreCompileInputs.cache
+C:\DotNetTraining\RemoteLib\obj\Debug\RemoteLib.csproj.Up2Date
+C:\DotNetTraining\RemoteLib\obj\Debug\RemoteLib.dll
+C:\DotNetTraining\RemoteLib\obj\Debug\RemoteLib.pdb

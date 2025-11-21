@@ -1,0 +1,12 @@
+C:\DotNetTraining\ClientApp1\bin\Debug\ClientApp1.exe.config
+C:\DotNetTraining\ClientApp1\bin\Debug\ClientApp1.exe
+C:\DotNetTraining\ClientApp1\bin\Debug\ClientApp1.pdb
+C:\DotNetTraining\ClientApp1\obj\Debug\ClientApp1.csproj.AssemblyReference.cache
+C:\DotNetTraining\ClientApp1\obj\Debug\ClientApp1.csproj.CoreCompileInputs.cache
+C:\DotNetTraining\ClientApp1\obj\Debug\ClientApp1.exe
+C:\DotNetTraining\ClientApp1\obj\Debug\ClientApp1.pdb
+C:\DotNetTraining\ClientApp1\obj\Debug\ClientApp1.exe.config
+C:\DotNetTraining\ClientApp1\bin\Debug\RemotingTrm.dll
+C:\DotNetTraining\ClientApp1\bin\Debug\RemotingTrm.pdb
+C:\DotNetTraining\ClientApp1\obj\Debug\ClientApp1.csproj.Up2Date
+C:\DotNetTraining\ClientApp1\bin\Debug\Client.config

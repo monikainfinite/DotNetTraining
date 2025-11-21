@@ -1,0 +1,13 @@
+C:\DotNetTraining\Day14_LanguageFeatures\bin\Debug\Day14_LanguageFeatures.exe.config
+C:\DotNetTraining\Day14_LanguageFeatures\bin\Debug\Day14_LanguageFeatures.exe
+C:\DotNetTraining\Day14_LanguageFeatures\bin\Debug\Day14_LanguageFeatures.pdb
+C:\DotNetTraining\Day14_LanguageFeatures\obj\Debug\Day14_LanguageFeatures.csproj.AssemblyReference.cache
+C:\DotNetTraining\Day14_LanguageFeatures\obj\Debug\Day14_LanguageFeatures.csproj.CoreCompileInputs.cache
+C:\DotNetTraining\Day14_LanguageFeatures\obj\Debug\Day14_LanguageFeatures.exe
+C:\DotNetTraining\Day14_LanguageFeatures\obj\Debug\Day14_LanguageFeatures.pdb
+C:\DotNetTraining\Day14_LanguageFeatures\obj\Debug\Day14_LanguageFeatures.exe.config
+C:\DotNetTraining\Day14_LanguageFeatures\bin\Debug\ClassLibrary1.dll
+C:\DotNetTraining\Day14_LanguageFeatures\bin\Debug\ClassLibrary1.pdb
+C:\DotNetTraining\Day14_LanguageFeatures\obj\Debug\Day14_La.B7980241.Up2Date
+C:\DotNetTraining\Day14_LanguageFeatures\bin\Debug\ClassLibrary2.dll
+C:\DotNetTraining\Day14_LanguageFeatures\bin\Debug\ClassLibrary2.pdb

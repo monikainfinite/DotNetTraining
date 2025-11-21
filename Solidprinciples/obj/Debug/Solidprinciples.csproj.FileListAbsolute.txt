@@ -1,0 +1,8 @@
+C:\DotNetTraining\Solidprinciples\bin\Debug\Solidprinciples.exe.config
+C:\DotNetTraining\Solidprinciples\bin\Debug\Solidprinciples.exe
+C:\DotNetTraining\Solidprinciples\bin\Debug\Solidprinciples.pdb
+C:\DotNetTraining\Solidprinciples\obj\Debug\Solidprinciples.csproj.AssemblyReference.cache
+C:\DotNetTraining\Solidprinciples\obj\Debug\Solidprinciples.csproj.CoreCompileInputs.cache
+C:\DotNetTraining\Solidprinciples\obj\Debug\Solidprinciples.exe
+C:\DotNetTraining\Solidprinciples\obj\Debug\Solidprinciples.pdb
+C:\DotNetTraining\Solidprinciples\obj\Debug\Solidprinciples.exe.config

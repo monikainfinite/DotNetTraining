@@ -1,0 +1,8 @@
+C:\DotNetTraining\Patterndesignexercises\obj\Debug\Patterndesignexercises.csproj.AssemblyReference.cache
+C:\DotNetTraining\Patterndesignexercises\obj\Debug\Patterndesignexercises.csproj.CoreCompileInputs.cache
+C:\DotNetTraining\Patterndesignexercises\bin\Debug\Patterndesignexercises.exe.config
+C:\DotNetTraining\Patterndesignexercises\bin\Debug\Patterndesignexercises.exe
+C:\DotNetTraining\Patterndesignexercises\bin\Debug\Patterndesignexercises.pdb
+C:\DotNetTraining\Patterndesignexercises\obj\Debug\Patterndesignexercises.exe
+C:\DotNetTraining\Patterndesignexercises\obj\Debug\Patterndesignexercises.pdb
+C:\DotNetTraining\Patterndesignexercises\obj\Debug\Patterndesignexercises.exe.config

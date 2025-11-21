@@ -1,0 +1,6 @@
+C:\DotNetTraining\RemoteTRn\bin\Debug\RemoteTRn.dll
+C:\DotNetTraining\RemoteTRn\bin\Debug\RemoteTRn.pdb
+C:\DotNetTraining\RemoteTRn\obj\Debug\RemoteTRn.csproj.AssemblyReference.cache
+C:\DotNetTraining\RemoteTRn\obj\Debug\RemoteTRn.csproj.CoreCompileInputs.cache
+C:\DotNetTraining\RemoteTRn\obj\Debug\RemoteTRn.dll
+C:\DotNetTraining\RemoteTRn\obj\Debug\RemoteTRn.pdb

@@ -1,0 +1,8 @@
+C:\DotNetTraining\Day1_Assignment2\bin\Debug\Day1_Assignment2.exe.config
+C:\DotNetTraining\Day1_Assignment2\bin\Debug\Day1_Assignment2.exe
+C:\DotNetTraining\Day1_Assignment2\bin\Debug\Day1_Assignment2.pdb
+C:\DotNetTraining\Day1_Assignment2\obj\Debug\Day1_Assignment2.csproj.AssemblyReference.cache
+C:\DotNetTraining\Day1_Assignment2\obj\Debug\Day1_Assignment2.csproj.CoreCompileInputs.cache
+C:\DotNetTraining\Day1_Assignment2\obj\Debug\Day1_Assignment2.exe
+C:\DotNetTraining\Day1_Assignment2\obj\Debug\Day1_Assignment2.pdb
+C:\DotNetTraining\Day1_Assignment2\obj\Debug\Day1_Assignment2.exe.config

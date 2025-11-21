@@ -1,0 +1,8 @@
+C:\DotNetTraining\Designpatterns\bin\Debug\Designpatterns.exe.config
+C:\DotNetTraining\Designpatterns\bin\Debug\Designpatterns.exe
+C:\DotNetTraining\Designpatterns\bin\Debug\Designpatterns.pdb
+C:\DotNetTraining\Designpatterns\obj\Debug\Designpatterns.csproj.AssemblyReference.cache
+C:\DotNetTraining\Designpatterns\obj\Debug\Designpatterns.csproj.CoreCompileInputs.cache
+C:\DotNetTraining\Designpatterns\obj\Debug\Designpatterns.exe
+C:\DotNetTraining\Designpatterns\obj\Debug\Designpatterns.pdb
+C:\DotNetTraining\Designpatterns\obj\Debug\Designpatterns.exe.config

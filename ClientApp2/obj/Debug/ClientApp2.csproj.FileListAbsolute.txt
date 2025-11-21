@@ -1,0 +1,12 @@
+C:\DotNetTraining\ClientApp2\bin\Debug\ClientApp2.exe.config
+C:\DotNetTraining\ClientApp2\bin\Debug\ClientApp2.exe
+C:\DotNetTraining\ClientApp2\bin\Debug\ClientApp2.pdb
+C:\DotNetTraining\ClientApp2\bin\Debug\RemoteTRn.dll
+C:\DotNetTraining\ClientApp2\bin\Debug\RemoteTRn.pdb
+C:\DotNetTraining\ClientApp2\obj\Debug\ClientApp2.csproj.AssemblyReference.cache
+C:\DotNetTraining\ClientApp2\obj\Debug\ClientApp2.csproj.CoreCompileInputs.cache
+C:\DotNetTraining\ClientApp2\obj\Debug\ClientApp2.csproj.Up2Date
+C:\DotNetTraining\ClientApp2\obj\Debug\ClientApp2.exe
+C:\DotNetTraining\ClientApp2\obj\Debug\ClientApp2.pdb
+C:\DotNetTraining\ClientApp2\bin\Debug\Client.config
+C:\DotNetTraining\ClientApp2\obj\Debug\ClientApp2.exe.config

@@ -1,0 +1,12 @@
+C:\DotNetTraining\Server app\bin\Debug\Server app.exe
+C:\DotNetTraining\Server app\bin\Debug\Server app.pdb
+C:\DotNetTraining\Server app\bin\Debug\RemoteLib.dll
+C:\DotNetTraining\Server app\bin\Debug\RemotingTrm.dll
+C:\DotNetTraining\Server app\bin\Debug\RemoteLib.pdb
+C:\DotNetTraining\Server app\bin\Debug\RemotingTrm.pdb
+C:\DotNetTraining\Server app\obj\Debug\Server app.csproj.AssemblyReference.cache
+C:\DotNetTraining\Server app\obj\Debug\Server app.csproj.CoreCompileInputs.cache
+C:\DotNetTraining\Server app\obj\Debug\Server app.csproj.Up2Date
+C:\DotNetTraining\Server app\obj\Debug\Server app.exe
+C:\DotNetTraining\Server app\obj\Debug\Server app.pdb
+C:\DotNetTraining\Server app\bin\Debug\server.config
