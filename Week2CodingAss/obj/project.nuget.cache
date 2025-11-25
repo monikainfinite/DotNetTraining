@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "dgSpecHash": "gsRUJMg0cF4=",
+  "success": false,
+  "projectFilePath": "C:\\DotNetTraining\\Week2CodingAss\\HRservices.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Unable to find project information for 'C:\\DotNetTraining\\HRDataLib\\HRDataLib.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
+      "projectPath": "C:\\DotNetTraining\\Week2CodingAss\\HRservices.csproj",
+      "filePath": "C:\\DotNetTraining\\Week2CodingAss\\HRservices.csproj",
+      "libraryId": "C:\\DotNetTraining\\HRDataLib\\HRDataLib.csproj",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Unable to find project information for 'C:\\DotNetTraining\\CodingAssessment2\\CodingAssessment2.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
+      "projectPath": "C:\\DotNetTraining\\Week2CodingAss\\HRservices.csproj",
+      "filePath": "C:\\DotNetTraining\\Week2CodingAss\\HRservices.csproj",
+      "libraryId": "C:\\DotNetTraining\\CodingAssessment2\\CodingAssessment2.csproj",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    }
+  ]
+}
