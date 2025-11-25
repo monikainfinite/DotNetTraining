@@ -1,0 +1,16 @@
+C:\DotNetTraining\HRDataLib\bin\Debug\net9.0\HRDataLib.deps.json
+C:\DotNetTraining\HRDataLib\bin\Debug\net9.0\HRDataLib.dll
+C:\DotNetTraining\HRDataLib\bin\Debug\net9.0\HRDataLib.pdb
+C:\DotNetTraining\HRDataLib\bin\Debug\net9.0\CodingAssessment2.dll
+C:\DotNetTraining\HRDataLib\bin\Debug\net9.0\CodingAssessment2.pdb
+C:\DotNetTraining\HRDataLib\obj\Debug\net9.0\HRDataLib.csproj.AssemblyReference.cache
+C:\DotNetTraining\HRDataLib\obj\Debug\net9.0\HRDataLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\DotNetTraining\HRDataLib\obj\Debug\net9.0\HRDataLib.AssemblyInfoInputs.cache
+C:\DotNetTraining\HRDataLib\obj\Debug\net9.0\HRDataLib.AssemblyInfo.cs
+C:\DotNetTraining\HRDataLib\obj\Debug\net9.0\HRDataLib.csproj.CoreCompileInputs.cache
+C:\DotNetTraining\HRDataLib\obj\Debug\net9.0\HRDataLib.sourcelink.json
+C:\DotNetTraining\HRDataLib\obj\Debug\net9.0\HRDataLib.csproj.Up2Date
+C:\DotNetTraining\HRDataLib\obj\Debug\net9.0\HRDataLib.dll
+C:\DotNetTraining\HRDataLib\obj\Debug\net9.0\refint\HRDataLib.dll
+C:\DotNetTraining\HRDataLib\obj\Debug\net9.0\HRDataLib.pdb
+C:\DotNetTraining\HRDataLib\obj\Debug\net9.0\ref\HRDataLib.dll

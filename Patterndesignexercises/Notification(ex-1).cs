@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Console;
 
 namespace Patterndesignexercises
 {
@@ -14,21 +15,21 @@ namespace Patterndesignexercises
     {
         public void Send(string message)
         {
-            Console.Write("sending email notification" + message);
+            WriteLine("sending email notification" + message);
         }
     }
     public class SmsNotification : INotification
     {
         public void Send(string message)
         {
-            Console.Write("sending sms notification" + message);
+           WriteLine("sending sms notification" + message);
         }
     }
     public class PushNotification : INotification
     {
         public void Send(string message)
         {
-            Console.Write("sending push notification" + message);
+            WriteLine("sending push notification" + message);
         }
     }
     public class NotificationFactory
@@ -54,8 +55,8 @@ namespace Patterndesignexercises
     {
             public static void Main(string[] args)
             {
-                Console.WriteLine("Enter Notification Type (email / sms / push):");
-                string type = Console.ReadLine();
+                WriteLine("Enter Notification Type (email / sms / push):");
+                string type = ReadLine();
             INotification notification = NotificationFactory.GetNotification(type);
             notification.Send("Welcome Monika!");
         }

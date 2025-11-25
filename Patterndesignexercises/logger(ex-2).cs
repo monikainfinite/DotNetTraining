@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Console;
 
 namespace Patterndesignexercises
 {
@@ -11,7 +12,7 @@ namespace Patterndesignexercises
         private static Logger instance;
         private Logger()
         {
-            Console.WriteLine("private constructor");
+           WriteLine("private constructor");
         }
         public static Logger Instance
         {
@@ -26,7 +27,7 @@ namespace Patterndesignexercises
         }
         public void WriteLog(string msg)
         {
-            Console.WriteLine($"Log: {msg}");
+           WriteLine($"Log: {msg}");
         }
     }
     internal class logger_ex_2_
@@ -36,7 +37,7 @@ namespace Patterndesignexercises
             Logger logger =Logger.Instance;
             logger.WriteLog("application started");
             logger.WriteLog("user logged in");
-            logger.WriteLog("payment sucessful");
+          
 
         }
     }

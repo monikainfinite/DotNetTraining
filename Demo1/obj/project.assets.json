@@ -1,0 +1,147 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "CodingAssessment2/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/CodingAssessment2.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CodingAssessment2.dll": {}
+        }
+      },
+      "HRDataLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "CodingAssessment2": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HRDataLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HRDataLib.dll": {}
+        }
+      },
+      "HRservices/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "CodingAssessment2": "1.0.0",
+          "HRDataLib": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HRservices.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HRservices.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CodingAssessment2/1.0.0": {
+      "type": "project",
+      "path": "../CodingAssessment2/CodingAssessment2.csproj",
+      "msbuildProject": "../CodingAssessment2/CodingAssessment2.csproj"
+    },
+    "HRDataLib/1.0.0": {
+      "type": "project",
+      "path": "../HRDataLib/HRDataLib.csproj",
+      "msbuildProject": "../HRDataLib/HRDataLib.csproj"
+    },
+    "HRservices/1.0.0": {
+      "type": "project",
+      "path": "../HRservices/HRservices.csproj",
+      "msbuildProject": "../HRservices/HRservices.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "CodingAssessment2 >= 1.0.0",
+      "HRDataLib >= 1.0.0",
+      "HRservices >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\monikak\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\DotNetTraining\\Demo1\\Demo1.csproj",
+      "projectName": "Demo1",
+      "projectPath": "C:\\DotNetTraining\\Demo1\\Demo1.csproj",
+      "packagesPath": "C:\\Users\\monikak\\.nuget\\packages\\",
+      "outputPath": "C:\\DotNetTraining\\Demo1\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\monikak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {
+            "C:\\DotNetTraining\\CodingAssessment2\\CodingAssessment2.csproj": {
+              "projectPath": "C:\\DotNetTraining\\CodingAssessment2\\CodingAssessment2.csproj"
+            },
+            "C:\\DotNetTraining\\HRDataLib\\HRDataLib.csproj": {
+              "projectPath": "C:\\DotNetTraining\\HRDataLib\\HRDataLib.csproj"
+            },
+            "C:\\DotNetTraining\\HRservices\\HRservices.csproj": {
+              "projectPath": "C:\\DotNetTraining\\HRservices\\HRservices.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+C:\DotNetTraining\ClassLib\bin\Debug\ClassLib.dll
+C:\DotNetTraining\ClassLib\bin\Debug\ClassLib.pdb
+C:\DotNetTraining\ClassLib\obj\Debug\ClassLib.csproj.AssemblyReference.cache
+C:\DotNetTraining\ClassLib\obj\Debug\ClassLib.csproj.CoreCompileInputs.cache
+C:\DotNetTraining\ClassLib\obj\Debug\ClassLib.dll
+C:\DotNetTraining\ClassLib\obj\Debug\ClassLib.pdb

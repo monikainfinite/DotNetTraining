@@ -1,0 +1,12 @@
+C:\DotNetTraining\CodingAssessment2\obj\Debug\net9.0\CodingAssessment2.GeneratedMSBuildEditorConfig.editorconfig
+C:\DotNetTraining\CodingAssessment2\obj\Debug\net9.0\CodingAssessment2.AssemblyInfoInputs.cache
+C:\DotNetTraining\CodingAssessment2\obj\Debug\net9.0\CodingAssessment2.AssemblyInfo.cs
+C:\DotNetTraining\CodingAssessment2\obj\Debug\net9.0\CodingAssessment2.csproj.CoreCompileInputs.cache
+C:\DotNetTraining\CodingAssessment2\obj\Debug\net9.0\CodingAssessment2.sourcelink.json
+C:\DotNetTraining\CodingAssessment2\bin\Debug\net9.0\CodingAssessment2.deps.json
+C:\DotNetTraining\CodingAssessment2\bin\Debug\net9.0\CodingAssessment2.dll
+C:\DotNetTraining\CodingAssessment2\bin\Debug\net9.0\CodingAssessment2.pdb
+C:\DotNetTraining\CodingAssessment2\obj\Debug\net9.0\CodingAssessment2.dll
+C:\DotNetTraining\CodingAssessment2\obj\Debug\net9.0\refint\CodingAssessment2.dll
+C:\DotNetTraining\CodingAssessment2\obj\Debug\net9.0\CodingAssessment2.pdb
+C:\DotNetTraining\CodingAssessment2\obj\Debug\net9.0\ref\CodingAssessment2.dll

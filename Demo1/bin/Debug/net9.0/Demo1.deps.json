@@ -1,0 +1,74 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Demo1/1.0.0": {
+        "dependencies": {
+          "CodingAssessment2": "1.0.0",
+          "HRDataLib": "1.0.0",
+          "HRservices": "1.0.0"
+        },
+        "runtime": {
+          "Demo1.dll": {}
+        }
+      },
+      "CodingAssessment2/1.0.0": {
+        "runtime": {
+          "CodingAssessment2.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "HRDataLib/1.0.0": {
+        "dependencies": {
+          "CodingAssessment2": "1.0.0"
+        },
+        "runtime": {
+          "HRDataLib.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "HRservices/1.0.0": {
+        "dependencies": {
+          "CodingAssessment2": "1.0.0",
+          "HRDataLib": "1.0.0"
+        },
+        "runtime": {
+          "HRservices.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Demo1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CodingAssessment2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HRDataLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HRservices/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
