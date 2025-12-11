@@ -1,0 +1,8 @@
+C:\DotNetTraining\ado.net assignemt\bin\Debug\ado.net assignemt.exe.config
+C:\DotNetTraining\ado.net assignemt\bin\Debug\ado.net assignemt.exe
+C:\DotNetTraining\ado.net assignemt\bin\Debug\ado.net assignemt.pdb
+C:\DotNetTraining\ado.net assignemt\obj\Debug\ado.net assignemt.csproj.AssemblyReference.cache
+C:\DotNetTraining\ado.net assignemt\obj\Debug\ado.net assignemt.csproj.CoreCompileInputs.cache
+C:\DotNetTraining\ado.net assignemt\obj\Debug\ado.net assignemt.exe
+C:\DotNetTraining\ado.net assignemt\obj\Debug\ado.net assignemt.pdb
+C:\DotNetTraining\ado.net assignemt\obj\Debug\ado.net assignemt.exe.config

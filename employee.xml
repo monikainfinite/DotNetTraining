@@ -1,0 +1,250 @@
+<?xml version="1.0" standalone="yes"?>
+<diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+  <NewDataSet>
+    <emp diffgr:id="emp1" msdata:rowOrder="0">
+      <EmpID>1</EmpID>
+      <EmpName>Aasritha</EmpName>
+      <Salary>52000.00</Salary>
+      <DateOfJoin>2022-04-15T00:00:00+05:30</DateOfJoin>
+      <DeptID>30</DeptID>
+    </emp>
+    <emp diffgr:id="emp2" msdata:rowOrder="1">
+      <EmpID>3</EmpID>
+      <EmpName>Anvith Reddy</EmpName>
+      <Salary>900000.00</Salary>
+      <DateOfJoin>2023-02-10T00:00:00+05:30</DateOfJoin>
+      <DeptID>10</DeptID>
+    </emp>
+    <emp diffgr:id="emp3" msdata:rowOrder="2">
+      <EmpID>4</EmpID>
+      <EmpName>ASHOK</EmpName>
+      <Salary>55000.00</Salary>
+      <DateOfJoin>2021-07-18T00:00:00+05:30</DateOfJoin>
+      <DeptID>40</DeptID>
+    </emp>
+    <emp diffgr:id="emp4" msdata:rowOrder="3">
+      <EmpID>5</EmpID>
+      <EmpName>Deepalakshmi</EmpName>
+      <Salary>47000.00</Salary>
+      <DateOfJoin>2022-01-25T00:00:00+05:30</DateOfJoin>
+      <DeptID>20</DeptID>
+    </emp>
+    <emp diffgr:id="emp5" msdata:rowOrder="4">
+      <EmpID>7</EmpID>
+      <EmpName>Dharani sri</EmpName>
+      <Salary>46000.00</Salary>
+      <DateOfJoin>2020-09-30T00:00:00+05:30</DateOfJoin>
+      <DeptID>10</DeptID>
+    </emp>
+    <emp diffgr:id="emp6" msdata:rowOrder="5">
+      <EmpID>8</EmpID>
+      <EmpName>Humera</EmpName>
+      <Salary>62000.00</Salary>
+      <DateOfJoin>2021-12-05T00:00:00+05:30</DateOfJoin>
+      <DeptID>30</DeptID>
+    </emp>
+    <emp diffgr:id="emp7" msdata:rowOrder="6">
+      <EmpID>9</EmpID>
+      <EmpName>Kanishka</EmpName>
+      <Salary>53000.00</Salary>
+      <DateOfJoin>2022-05-09T00:00:00+05:30</DateOfJoin>
+      <DeptID>40</DeptID>
+    </emp>
+    <emp diffgr:id="emp8" msdata:rowOrder="7">
+      <EmpID>11</EmpID>
+      <EmpName>Keerthi</EmpName>
+      <Salary>58000.00</Salary>
+      <DateOfJoin>2021-03-22T00:00:00+05:30</DateOfJoin>
+      <DeptID>30</DeptID>
+    </emp>
+    <emp diffgr:id="emp9" msdata:rowOrder="8">
+      <EmpID>12</EmpID>
+      <EmpName>Keerthickragul</EmpName>
+      <Salary>54000.00</Salary>
+      <DateOfJoin>2022-06-10T00:00:00+05:30</DateOfJoin>
+      <DeptID>50</DeptID>
+    </emp>
+    <emp diffgr:id="emp10" msdata:rowOrder="9">
+      <EmpID>13</EmpID>
+      <EmpName>Logeshwaran</EmpName>
+      <Salary>50000.00</Salary>
+      <DateOfJoin>2020-11-17T00:00:00+05:30</DateOfJoin>
+      <DeptID>40</DeptID>
+    </emp>
+    <emp diffgr:id="emp11" msdata:rowOrder="10">
+      <EmpID>14</EmpID>
+      <EmpName>Madavi</EmpName>
+      <Salary>47000.00</Salary>
+      <DateOfJoin>2023-01-08T00:00:00+05:30</DateOfJoin>
+      <DeptID>10</DeptID>
+    </emp>
+    <emp diffgr:id="emp12" msdata:rowOrder="11">
+      <EmpID>15</EmpID>
+      <EmpName>Manikanta</EmpName>
+      <Salary>61000.00</Salary>
+      <DateOfJoin>2021-10-14T00:00:00+05:30</DateOfJoin>
+      <DeptID>30</DeptID>
+    </emp>
+    <emp diffgr:id="emp13" msdata:rowOrder="12">
+      <EmpID>16</EmpID>
+      <EmpName>Fatima</EmpName>
+      <Salary>49500.00</Salary>
+      <DateOfJoin>2022-02-19T00:00:00+05:30</DateOfJoin>
+      <DeptID>20</DeptID>
+    </emp>
+    <emp diffgr:id="emp14" msdata:rowOrder="13">
+      <EmpID>18</EmpID>
+      <EmpName>Nagamani</EmpName>
+      <Salary>47000.00</Salary>
+      <DateOfJoin>2020-08-27T00:00:00+05:30</DateOfJoin>
+      <DeptID>50</DeptID>
+    </emp>
+    <emp diffgr:id="emp15" msdata:rowOrder="14">
+      <EmpID>19</EmpID>
+      <EmpName>Pooja</EmpName>
+      <Salary>45000.00</Salary>
+      <DateOfJoin>2022-09-12T00:00:00+05:30</DateOfJoin>
+      <DeptID>40</DeptID>
+    </emp>
+    <emp diffgr:id="emp16" msdata:rowOrder="15">
+      <EmpID>20</EmpID>
+      <EmpName>Hymavathi</EmpName>
+      <Salary>48000.00</Salary>
+      <DateOfJoin>2021-07-05T00:00:00+05:30</DateOfJoin>
+      <DeptID>10</DeptID>
+    </emp>
+    <emp diffgr:id="emp17" msdata:rowOrder="16">
+      <EmpID>21</EmpID>
+      <EmpName>Sairam Somaraju</EmpName>
+      <Salary>65000.00</Salary>
+      <DateOfJoin>2020-05-18T00:00:00+05:30</DateOfJoin>
+      <DeptID>30</DeptID>
+    </emp>
+    <emp diffgr:id="emp18" msdata:rowOrder="17">
+      <EmpID>22</EmpID>
+      <EmpName>Sakthivel</EmpName>
+      <Salary>53000.00</Salary>
+      <DateOfJoin>2022-03-24T00:00:00+05:30</DateOfJoin>
+      <DeptID>40</DeptID>
+    </emp>
+    <emp diffgr:id="emp19" msdata:rowOrder="18">
+      <EmpID>23</EmpID>
+      <EmpName>Usha sri</EmpName>
+      <Salary>45500.00</Salary>
+      <DateOfJoin>2023-02-14T00:00:00+05:30</DateOfJoin>
+      <DeptID>20</DeptID>
+    </emp>
+    <emp diffgr:id="emp20" msdata:rowOrder="19">
+      <EmpID>24</EmpID>
+      <EmpName>Waseef</EmpName>
+      <Salary>62000.00</Salary>
+      <DateOfJoin>2021-01-30T00:00:00+05:30</DateOfJoin>
+      <DeptID>30</DeptID>
+    </emp>
+    <emp diffgr:id="emp21" msdata:rowOrder="20">
+      <EmpID>25</EmpID>
+      <EmpName>moni</EmpName>
+      <Salary>3000.00</Salary>
+      <DateOfJoin>2025-01-02T00:00:00+05:30</DateOfJoin>
+      <DeptID>10</DeptID>
+    </emp>
+    <emp diffgr:id="emp22" msdata:rowOrder="21">
+      <EmpID>27</EmpID>
+      <EmpName>moni</EmpName>
+      <Salary>3000.00</Salary>
+      <DateOfJoin>2025-01-02T00:00:00+05:30</DateOfJoin>
+      <DeptID>10</DeptID>
+    </emp>
+    <emp diffgr:id="emp23" msdata:rowOrder="22">
+      <EmpID>28</EmpID>
+      <EmpName>moni</EmpName>
+      <Salary>3000.00</Salary>
+      <DateOfJoin>2025-01-02T00:00:00+05:30</DateOfJoin>
+      <DeptID>10</DeptID>
+    </emp>
+    <emp diffgr:id="emp24" msdata:rowOrder="23">
+      <EmpID>29</EmpID>
+      <EmpName>monika</EmpName>
+      <Salary>20000.00</Salary>
+      <DateOfJoin>2025-02-08T00:00:00+05:30</DateOfJoin>
+      <DeptID>10</DeptID>
+    </emp>
+    <emp diffgr:id="emp25" msdata:rowOrder="24">
+      <EmpID>30</EmpID>
+      <EmpName>varshini</EmpName>
+      <Salary>30000.00</Salary>
+      <DateOfJoin>2025-02-08T00:00:00+05:30</DateOfJoin>
+      <DeptID>10</DeptID>
+    </emp>
+    <emp diffgr:id="emp26" msdata:rowOrder="25">
+      <EmpID>31</EmpID>
+      <EmpName>monika</EmpName>
+      <Salary>20000.00</Salary>
+      <DateOfJoin>2025-04-12T00:00:00+05:30</DateOfJoin>
+      <DeptID>10</DeptID>
+    </emp>
+    <emp diffgr:id="emp27" msdata:rowOrder="26">
+      <EmpID>39</EmpID>
+      <EmpName>Moni</EmpName>
+      <Salary>346567.00</Salary>
+      <DateOfJoin>2025-07-02T00:00:00+05:30</DateOfJoin>
+      <DeptID>12</DeptID>
+    </emp>
+    <emp diffgr:id="emp28" msdata:rowOrder="27">
+      <EmpID>40</EmpID>
+      <EmpName>Monika</EmpName>
+      <Salary>65000.00</Salary>
+      <DateOfJoin>2025-02-08T00:00:00+05:30</DateOfJoin>
+      <DeptID>15</DeptID>
+    </emp>
+    <emp diffgr:id="emp29" msdata:rowOrder="28">
+      <EmpID>46</EmpID>
+      <EmpName>moni</EmpName>
+      <Salary>23435.00</Salary>
+      <DateOfJoin>2025-02-08T00:00:00+05:30</DateOfJoin>
+      <DeptID>10</DeptID>
+    </emp>
+    <emp diffgr:id="emp30" msdata:rowOrder="29">
+      <EmpID>47</EmpID>
+      <EmpName>monika</EmpName>
+      <Salary>300000.00</Salary>
+      <DateOfJoin>2025-01-01T00:00:00+05:30</DateOfJoin>
+      <DeptID>10</DeptID>
+    </emp>
+    <emp diffgr:id="emp31" msdata:rowOrder="30">
+      <EmpID>48</EmpID>
+      <EmpName>teja sri</EmpName>
+      <Salary>40000.00</Salary>
+      <DateOfJoin>2025-01-11T00:00:00+05:30</DateOfJoin>
+      <DeptID>30</DeptID>
+    </emp>
+    <emp diffgr:id="emp32" msdata:rowOrder="31">
+      <EmpID>49</EmpID>
+      <EmpName>monika</EmpName>
+      <Salary>300000.00</Salary>
+      <DateOfJoin>2025-01-01T00:00:00+05:30</DateOfJoin>
+      <DeptID>10</DeptID>
+    </emp>
+    <emp diffgr:id="emp33" msdata:rowOrder="32">
+      <EmpID>50</EmpID>
+      <EmpName>teja sri</EmpName>
+      <Salary>40000.00</Salary>
+      <DateOfJoin>2025-01-11T00:00:00+05:30</DateOfJoin>
+      <DeptID>30</DeptID>
+    </emp>
+    <emp diffgr:id="emp34" msdata:rowOrder="33" diffgr:hasChanges="inserted">
+      <EmpID>51</EmpID>
+      <EmpName>Raj1</EmpName>
+      <Salary>30000</Salary>
+      <DateOfJoin>2000-01-01T00:00:00+05:30</DateOfJoin>
+      <DeptID>10</DeptID>
+    </emp>
+    <emp diffgr:id="emp35" msdata:rowOrder="34" diffgr:hasChanges="inserted">
+      <EmpID>52</EmpID>
+      <EmpName>vijay1</EmpName>
+      <Salary>31000</Salary>
+      <DateOfJoin>2001-01-01T00:00:00+05:30</DateOfJoin>
+      <DeptID>20</DeptID>
+    </emp>
+  </NewDataSet>
+</diffgr:diffgram>
