@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="infinitedbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="newDepartment">
+    <Key>
+      <PropertyRef Name="DeptID" />
+    </Key>
+    <Property Name="DeptID" Type="int" Nullable="false" />
+    <Property Name="DeptName" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="newEmployee">
+    <Key>
+      <PropertyRef Name="EmpID" />
+    </Key>
+    <Property Name="EmpID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmpName" Type="varchar" MaxLength="100" />
+    <Property Name="Salary" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="DateOfJoin" Type="date" />
+    <Property Name="DeptID" Type="int" />
+  </EntityType>
+  <Association Name="FK__newEmploy__DeptI__2057CCD0">
+    <End Role="newDepartment" Type="Self.newDepartment" Multiplicity="0..1" />
+    <End Role="newEmployee" Type="Self.newEmployee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="newDepartment">
+        <PropertyRef Name="DeptID" />
+      </Principal>
+      <Dependent Role="newEmployee">
+        <PropertyRef Name="DeptID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="infinitedbModelStoreContainer">
+    <EntitySet Name="newDepartment" EntityType="Self.newDepartment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="newEmployee" EntityType="Self.newEmployee" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__newEmploy__DeptI__2057CCD0" Association="Self.FK__newEmploy__DeptI__2057CCD0">
+      <End Role="newDepartment" EntitySet="newDepartment" />
+      <End Role="newEmployee" EntitySet="newEmployee" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

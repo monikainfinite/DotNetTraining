@@ -83,7 +83,7 @@ namespace ado.net_assignemt
                 Console.WriteLine($"{r6.MovieId} {r6.MovieName} {r6.Actor} {r6.Actress} {r6.YOR}");
 
             }
-            // 7.display max movies acted by each acto
+            // 7.display max movies acted by each actor
             var res7 = from m in li
                        group m by m.Actor into g
                        select new { Actor = g.Key, Movies = g.Count() };

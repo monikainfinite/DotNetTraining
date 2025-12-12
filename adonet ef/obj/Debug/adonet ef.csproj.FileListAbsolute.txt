@@ -1,0 +1,13 @@
+C:\DotNetTraining\adonet ef\obj\Debug\adonet ef.csproj.AssemblyReference.cache
+C:\DotNetTraining\adonet ef\obj\Debug\adonet ef.csproj.CoreCompileInputs.cache
+C:\DotNetTraining\adonet ef\bin\Debug\adonet ef.exe.config
+C:\DotNetTraining\adonet ef\bin\Debug\adonet ef.exe
+C:\DotNetTraining\adonet ef\bin\Debug\adonet ef.pdb
+C:\DotNetTraining\adonet ef\bin\Debug\EntityFramework.dll
+C:\DotNetTraining\adonet ef\bin\Debug\EntityFramework.SqlServer.dll
+C:\DotNetTraining\adonet ef\bin\Debug\EntityFramework.xml
+C:\DotNetTraining\adonet ef\bin\Debug\EntityFramework.SqlServer.xml
+C:\DotNetTraining\adonet ef\obj\Debug\adonet ef.csproj.Up2Date
+C:\DotNetTraining\adonet ef\obj\Debug\adonet ef.exe
+C:\DotNetTraining\adonet ef\obj\Debug\adonet ef.pdb
+C:\DotNetTraining\adonet ef\obj\Debug\adonet ef.exe.config

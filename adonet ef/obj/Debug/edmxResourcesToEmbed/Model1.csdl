@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="infinitedbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="newDepartment">
+    <Key>
+      <PropertyRef Name="DeptID" />
+    </Key>
+    <Property Name="DeptID" Type="Int32" Nullable="false" />
+    <Property Name="DeptName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="newEmployees" Relationship="Self.FK__newEmploy__DeptI__2057CCD0" FromRole="newDepartment" ToRole="newEmployee" />
+  </EntityType>
+  <EntityType Name="newEmployee">
+    <Key>
+      <PropertyRef Name="EmpID" />
+    </Key>
+    <Property Name="EmpID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmpName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Salary" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="DateOfJoin" Type="DateTime" Precision="0" />
+    <Property Name="DeptID" Type="Int32" />
+    <NavigationProperty Name="newDepartment" Relationship="Self.FK__newEmploy__DeptI__2057CCD0" FromRole="newEmployee" ToRole="newDepartment" />
+  </EntityType>
+  <Association Name="FK__newEmploy__DeptI__2057CCD0">
+    <End Role="newDepartment" Type="Self.newDepartment" Multiplicity="0..1" />
+    <End Role="newEmployee" Type="Self.newEmployee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="newDepartment">
+        <PropertyRef Name="DeptID" />
+      </Principal>
+      <Dependent Role="newEmployee">
+        <PropertyRef Name="DeptID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="infinitedbEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="newDepartments" EntityType="Self.newDepartment" />
+    <EntitySet Name="newEmployees" EntityType="Self.newEmployee" />
+    <AssociationSet Name="FK__newEmploy__DeptI__2057CCD0" Association="Self.FK__newEmploy__DeptI__2057CCD0">
+      <End Role="newDepartment" EntitySet="newDepartments" />
+      <End Role="newEmployee" EntitySet="newEmployees" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
