@@ -20,5 +20,206 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="addpro" FunctionName="infinitedbModel.Store.addpro" />
+    <FunctionImportMapping FunctionImportName="addpro1" FunctionName="infinitedbModel.Store.addpro1" />
+    <FunctionImportMapping FunctionImportName="Addproc2" FunctionName="infinitedbModel.Store.Addproc2" />
+    <FunctionImportMapping FunctionImportName="custprocedure" FunctionName="infinitedbModel.Store.custprocedure" />
+    <FunctionImportMapping FunctionImportName="discount" FunctionName="infinitedbModel.Store.discount">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="infinitedbModel.discount_Result">
+          <ScalarProperty Name="orderid" ColumnName="orderid" />
+          <ScalarProperty Name="custid" ColumnName="custid" />
+          <ScalarProperty Name="orderdate" ColumnName="orderdate" />
+          <ScalarProperty Name="product" ColumnName="product" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="productid" ColumnName="productid" />
+          <ScalarProperty Name="discountedprice" ColumnName="discountedprice" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="dislplaydata" FunctionName="infinitedbModel.Store.dislplaydata">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="infinitedbModel.dislplaydata_Result">
+          <ScalarProperty Name="custid" ColumnName="custid" />
+          <ScalarProperty Name="custname" ColumnName="custname" />
+          <ScalarProperty Name="age" ColumnName="age" />
+          <ScalarProperty Name="caddress" ColumnName="caddress" />
+          <ScalarProperty Name="cphone" ColumnName="cphone" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="displaydata" FunctionName="infinitedbModel.Store.displaydata" />
+    <FunctionImportMapping FunctionImportName="divide" FunctionName="infinitedbModel.Store.divide" />
+    <FunctionImportMapping FunctionImportName="fn_discount" FunctionName="infinitedbModel.Store.fn_discount">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="infinitedbModel.fn_discount_Result">
+          <ScalarProperty Name="custid" ColumnName="custid" />
+          <ScalarProperty Name="product" ColumnName="product" />
+          <ScalarProperty Name="originalprice" ColumnName="originalprice" />
+          <ScalarProperty Name="discountprice" ColumnName="discountprice" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="fn_Employees" FunctionName="infinitedbModel.Store.fn_Employees">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="infinitedbModel.fn_Employees_Result">
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="Employee_Name" ColumnName="Employee Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="fn_getcustomers" FunctionName="infinitedbModel.Store.fn_getcustomers">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="infinitedbModel.fn_getcustomers_Result">
+          <ScalarProperty Name="custid" ColumnName="custid" />
+          <ScalarProperty Name="custname" ColumnName="custname" />
+          <ScalarProperty Name="age" ColumnName="age" />
+          <ScalarProperty Name="caddress" ColumnName="caddress" />
+          <ScalarProperty Name="cphone" ColumnName="cphone" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="fn_yrs" FunctionName="infinitedbModel.Store.fn_yrs">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="infinitedbModel.fn_yrs_Result">
+          <ScalarProperty Name="orderid" ColumnName="orderid" />
+          <ScalarProperty Name="custid" ColumnName="custid" />
+          <ScalarProperty Name="orderdate" ColumnName="orderdate" />
+          <ScalarProperty Name="product" ColumnName="product" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="productid" ColumnName="productid" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="getbyaddress" FunctionName="infinitedbModel.Store.getbyaddress">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="infinitedbModel.getbyaddress_Result">
+          <ScalarProperty Name="custid" ColumnName="custid" />
+          <ScalarProperty Name="custname" ColumnName="custname" />
+          <ScalarProperty Name="age" ColumnName="age" />
+          <ScalarProperty Name="caddress" ColumnName="caddress" />
+          <ScalarProperty Name="cphone" ColumnName="cphone" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="getcustdetails" FunctionName="infinitedbModel.Store.getcustdetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="infinitedbModel.getcustdetails_Result">
+          <ScalarProperty Name="custid" ColumnName="custid" />
+          <ScalarProperty Name="custname" ColumnName="custname" />
+          <ScalarProperty Name="age" ColumnName="age" />
+          <ScalarProperty Name="caddress" ColumnName="caddress" />
+          <ScalarProperty Name="cphone" ColumnName="cphone" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetEmployees" FunctionName="infinitedbModel.Store.GetEmployees">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="infinitedbModel.GetEmployees_Result">
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+          <ScalarProperty Name="Salary" ColumnName="Salary" />
+          <ScalarProperty Name="DateOfJoin" ColumnName="DateOfJoin" />
+          <ScalarProperty Name="DeptID" ColumnName="DeptID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="myproc" FunctionName="infinitedbModel.Store.myproc" />
+    <FunctionImportMapping FunctionImportName="orderprocedure" FunctionName="infinitedbModel.Store.orderprocedure">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="infinitedbModel.orderprocedure_Result">
+          <ScalarProperty Name="orderid" ColumnName="orderid" />
+          <ScalarProperty Name="custid" ColumnName="custid" />
+          <ScalarProperty Name="orderdate" ColumnName="orderdate" />
+          <ScalarProperty Name="product" ColumnName="product" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="productid" ColumnName="productid" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="pGetProductsByCategory" FunctionName="infinitedbModel.Store.pGetProductsByCategory">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="infinitedbModel.pGetProductsByCategory_Result">
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="pname" ColumnName="pname" />
+          <ScalarProperty Name="categoryname" ColumnName="categoryname" />
+          <ScalarProperty Name="price" ColumnName="price" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="showbysal" FunctionName="infinitedbModel.Store.showbysal">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="infinitedbModel.showbysal_Result">
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+          <ScalarProperty Name="Salary" ColumnName="Salary" />
+          <ScalarProperty Name="DateOfJoin" ColumnName="DateOfJoin" />
+          <ScalarProperty Name="DeptID" ColumnName="DeptID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="showdata" FunctionName="infinitedbModel.Store.showdata">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="infinitedbModel.showdata_Result">
+          <ScalarProperty Name="custid" ColumnName="custid" />
+          <ScalarProperty Name="custname" ColumnName="custname" />
+          <ScalarProperty Name="age" ColumnName="age" />
+          <ScalarProperty Name="caddress" ColumnName="caddress" />
+          <ScalarProperty Name="cphone" ColumnName="cphone" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_getCustomers" FunctionName="infinitedbModel.Store.sp_getCustomers">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="infinitedbModel.sp_getCustomers_Result">
+          <ScalarProperty Name="custid" ColumnName="custid" />
+          <ScalarProperty Name="custname" ColumnName="custname" />
+          <ScalarProperty Name="age" ColumnName="age" />
+          <ScalarProperty Name="caddress" ColumnName="caddress" />
+          <ScalarProperty Name="cphone" ColumnName="cphone" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_getdata" FunctionName="infinitedbModel.Store.sp_getdata" />
+    <FunctionImportMapping FunctionImportName="sp_getemp" FunctionName="infinitedbModel.Store.sp_getemp">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="infinitedbModel.sp_getemp_Result">
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+          <ScalarProperty Name="Salary" ColumnName="Salary" />
+          <ScalarProperty Name="DateOfJoin" ColumnName="DateOfJoin" />
+          <ScalarProperty Name="DeptID" ColumnName="DeptID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_GetEmployeeDet" FunctionName="infinitedbModel.Store.sp_GetEmployeeDet" />
+    <FunctionImportMapping FunctionImportName="spAddEmployee" FunctionName="infinitedbModel.Store.spAddEmployee" />
+    <FunctionImportMapping FunctionImportName="spGetdata" FunctionName="infinitedbModel.Store.spGetdata">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="infinitedbModel.spGetdata_Result">
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="spGetOrderDetails" FunctionName="infinitedbModel.Store.spGetOrderDetails" />
+    <FunctionImportMapping FunctionImportName="spSafeOrderInsert" FunctionName="infinitedbModel.Store.spSafeOrderInsert" />
+    <FunctionImportMapping FunctionImportName="spUpdateSalary" FunctionName="infinitedbModel.Store.spUpdateSalary" />
+    <FunctionImportMapping FunctionImportName="test" FunctionName="infinitedbModel.Store.test">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="infinitedbModel.test_Result">
+          <ScalarProperty Name="custid" ColumnName="custid" />
+          <ScalarProperty Name="custname" ColumnName="custname" />
+          <ScalarProperty Name="caddress" ColumnName="caddress" />
+          <ScalarProperty Name="orderid" ColumnName="orderid" />
+          <ScalarProperty Name="orderdate" ColumnName="orderdate" />
+          <ScalarProperty Name="qty" ColumnName="qty" />
+          <ScalarProperty Name="productid" ColumnName="productid" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
   </EntityContainerMapping>
 </Mapping>

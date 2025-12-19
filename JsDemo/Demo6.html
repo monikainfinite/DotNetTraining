@@ -1,0 +1,74 @@
+<html>
+
+<body>
+<script>
+// onblur  : when textbox looses the focus (when the textbox becomes inactive)
+// onfocus : when textbox gets the focus(when the textbox get active)
+//onchange : radio, checbox , textbox, dropdown
+function display()
+{
+// how to read textbox value?
+//alert(t1.value);
+//alert(document.getElementById("t1").value);
+
+var a = document.getElementById("t1").value;
+var b = document.getElementById("t2").value;
+alert(parseInt(a) + parseInt(b))
+}
+
+function validate()
+{
+	// min length of textbox 3 charecters
+var a = document.getElementById("t1").value;
+if(a.length <=3)
+{
+alert("min length should be 3 charecters");
+}
+else
+{
+alert("valid data");
+}
+}
+
+
+
+ function hello1()
+{
+document.getElementById("d1").innerText = "onfocus called";
+}
+
+function hello2()
+{
+document.getElementById("d1").innerText = "onblur called";
+}
+
+
+function getdata()
+{
+a=  document.getElementById("s1").value;
+alert(a)
+}
+</script>
+
+<div id="d1">
+</div>
+<input type="text" id="t1" onblur="hello2()" onfocus="hello1()"/><br>
+
+<input type="text" id="t2"/><br>
+
+
+<input type="button" value="click here" onclick="display()"/><br>
+
+<select id="s1" onchange="getdata()">
+<option>Sai</option>
+<option>Anvith</option>
+<option>Madavi</option>
+<option>Logesh</option>
+<option>Kanishka</option>
+</select>
+</body>
+
+
+
+</html>
+

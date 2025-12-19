@@ -1,0 +1,40 @@
+<html>
+    <head>
+    <style>
+        #div1{
+            color:red;
+            margin-top:100px;
+        }
+    </style>
+    </head>
+    <body>
+        <h2>Display name multiple times</h2>
+        <label>Enter number: </label>
+<input type="number" id="num"><br><br>
+
+<label>Enter name: </label>
+<input type="text" id="name"><br><br>
+<button onclick="displayName()">Display</button>
+<div id="div1"></div>
+<script>
+    function displayName(){
+    var num=parseInt(document.getElementById("num").value);
+    var name=document.getElementById("name").value;
+    document.getElementById("div1").innerHTML="";
+    if(num<0){
+        alert("please enter a valid number");
+        return;
+    }
+    if(name==""){
+        alert("enter your name ");
+        return;
+    }
+    for(i=0;i<=num;i++){
+        const p=document.createElement("p");
+        p.innerText=name;
+        document.getElementById("div1").appendChild(p);
+    }
+}
+</script>
+    </body>
+</html>

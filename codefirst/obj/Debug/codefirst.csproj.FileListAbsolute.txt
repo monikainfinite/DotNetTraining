@@ -1,0 +1,13 @@
+C:\DotNetTraining\codefirst\bin\Debug\codefirst.exe.config
+C:\DotNetTraining\codefirst\bin\Debug\codefirst.exe
+C:\DotNetTraining\codefirst\bin\Debug\codefirst.pdb
+C:\DotNetTraining\codefirst\bin\Debug\EntityFramework.dll
+C:\DotNetTraining\codefirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\DotNetTraining\codefirst\bin\Debug\EntityFramework.xml
+C:\DotNetTraining\codefirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\DotNetTraining\codefirst\obj\Debug\codefirst.csproj.AssemblyReference.cache
+C:\DotNetTraining\codefirst\obj\Debug\codefirst.csproj.CoreCompileInputs.cache
+C:\DotNetTraining\codefirst\obj\Debug\codefirst.csproj.Up2Date
+C:\DotNetTraining\codefirst\obj\Debug\codefirst.exe
+C:\DotNetTraining\codefirst\obj\Debug\codefirst.pdb
+C:\DotNetTraining\codefirst\obj\Debug\codefirst.exe.config

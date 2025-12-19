@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <style>
+             table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        </style>
+
+    </head>
+    <body>
+        <h2>Employee Table</h2>
+        <table>
+            <tr>
+                <th>Employee photo</th>
+                <th>Employee name</th>
+            </tr>
+            <tr>
+                <td><img src="profile.jpg" class="empphoto"></td>
+                <td>Monika</td>
+            </tr>
+                 <tr>
+                <td><img src="profile.jpg" class="empphoto"></td>
+                <td>Teja sri</td>
+            </tr>
+        </table>
+        <button onclick="toggleImage()">Hide/show </button>
+        <script>
+            function toggleImage(){
+                const images=document.getElementsByClassName("empphoto");
+                for(img of images){
+                    img.hidden=!img.hidden;
+                }
+            }
+        </script>
+    </body>
+</html>

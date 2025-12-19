@@ -1,0 +1,13 @@
+C:\DotNetTraining\Databasefirstass\bin\Debug\Databasefirstass.exe.config
+C:\DotNetTraining\Databasefirstass\bin\Debug\Databasefirstass.exe
+C:\DotNetTraining\Databasefirstass\bin\Debug\Databasefirstass.pdb
+C:\DotNetTraining\Databasefirstass\bin\Debug\EntityFramework.dll
+C:\DotNetTraining\Databasefirstass\bin\Debug\EntityFramework.SqlServer.dll
+C:\DotNetTraining\Databasefirstass\bin\Debug\EntityFramework.xml
+C:\DotNetTraining\Databasefirstass\bin\Debug\EntityFramework.SqlServer.xml
+C:\DotNetTraining\Databasefirstass\obj\Debug\Databasefirstass.csproj.AssemblyReference.cache
+C:\DotNetTraining\Databasefirstass\obj\Debug\Databasefirstass.csproj.CoreCompileInputs.cache
+C:\DotNetTraining\Databasefirstass\obj\Debug\Database.157FEC18.Up2Date
+C:\DotNetTraining\Databasefirstass\obj\Debug\Databasefirstass.exe
+C:\DotNetTraining\Databasefirstass\obj\Debug\Databasefirstass.pdb
+C:\DotNetTraining\Databasefirstass\obj\Debug\Databasefirstass.exe.config

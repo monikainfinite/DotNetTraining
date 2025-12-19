@@ -1,0 +1,269 @@
+Customers Table:
+------------------------------------------------
+create table customers(
+custid INT PRIMARY KEY,
+custname VARCHAR(50),
+age INT,
+caddress VARCHAR(100),
+cphone VARCHAR(15)
+);
+
+
+Inserting values:
+----------------------------------------------------
+
+INSERT INTO customers VALUES
+(1,'Monika',21,'Vizag','123456789'),
+(2,'Teja',20,'Bangalore','123456778'),
+(3,'Sri',23,'Hyderabad','1234567144'),
+(4,'surya',21,'Chennai','123456789'),
+(5,'Varshu',22,'Chennai','123456789'),
+(6,'Krishna',24,'Bangalore','123456879');
+------------------------------------------------------------
+1)Display the list of customers who resides in Bangalore
+
+Query:
+
+SELECT * FROM customers
+WHERE caddress = 'Bangalore';
+
+
+------------------------------------------------------------------------
+
+2)Display the list of customers who does not resides in Bangalore or 
+Chennai
+
+Query:
+
+SELECT * FROM customers
+WHERE caddress NOT IN ('Bangalore', 'Chennai');
+
+--------------------------------------------------------------------------------
+
+3) Display the list of customers who’s age is greater then 50 and does not 
+resides in Bangalore
+
+Query:
+
+SELECT * FROM customers WHERE age>50 AND caddress NOT IN ('Bangalore');
+
+-------------------------------------------------------------------------------
+
+4)Display the list of customers who’s name starts with A
+
+Query:
+
+SELECT * FROM customers WHERE custname LIKE 'A%';
+
+------------------------------------------------------------------------------------
+
+5) Display the list of customers who’s name contains a word Br
+
+Query:
+
+SELECT * FROM customers WHERE custname LIKE '%Br%';
+
+-----------------------------------------------------------------------------------
+
+6)Display the list of customer who’s name start between A to K
+
+Query:
+
+SELECT * FROM customers WHERE custname>='A' AND custname<'L';
+
+------------------------------------------------------------------------
+
+7)Display the list of customers who’s name is 5 character long
+
+Query:
+
+SELECT * FROM customers WHERE LEN(custname)=5;
+
+--------------------------------------------------------------------------------
+
+8)Display the list of customer who’s name 
+a. Start with s
+b. Third character is c
+c. Ends with e
+
+Query:
+
+SELECT * FROM customers WHERE custname LIKE 'S_c%e%';
+
+------------------------------------------------------------------------------------------
+
+9)Display unique customer names from customers table
+
+Query:
+
+SELECT DISTINCT custname FROM customers;
+
+
+------------------------------------------------------------
+
+
+orders:
+
+order Table:(creation)
+-------------------------------------------------
+
+CREATE TABLE orders (
+    orderid INT PRIMARY KEY,
+    custid INT,
+    orderdate DATE,
+    product VARCHAR(50),
+    price DECIMAL(10,2),
+    qty INT,
+    FOREIGN KEY (custid) REFERENCES customers(custid)
+);
+
+
+Inserting values:(inserting)
+-------------------------------------------------------
+
+INSERT INTO orders VALUES
+(101, 1, '2025-01-10', 'Mobile', 15000, 1),
+(102, 2, '2025-01-12', 'Laptop', 55000, 1),
+(103, 3, '2025-01-15', 'Headphones', 2000, 2),
+(104, 1, '2025-01-20', 'Smartwatch', 5000, 1),
+(105, 4, '2025-01-22', 'Tablet', 25000, 1),
+(106, 5, '2025-01-25', 'Charger', 800, 3),
+(107, 6, '2025-01-28', 'Keyboard', 1200, 1);
+
+--------------------------------------------------------------------------------
+
+10)List orders details where qty falling in the range 100-200 and 700-1200
+
+Query:
+
+SELECT * FROM orders WHERE qty BETWEEN 100 AND 200 OR qty BETWEEN 700 AND 1200;
+
+----------------------------------------------------------------------------------
+
+11) List customer details where custname beginning with AL and ending 
+with N 
+
+Query:
+
+SELECT * FROM customers WHERE custname LIKE 'AL%N';
+
+-------------------------------------------------------------------------
+
+12).Display what each price would be if a 20% price increase were to take 
+place. Show the custid , old price and new price ,using meaningful 
+headings(use orders table)
+
+Query:
+
+SELECT custid AS CustomerID ,
+price AS Oldprice,
+price*1.2 AS Newprice FROM orders;
+
+----------------------------------------------------------------------------------
+
+13).Display top 3 highest qty from orders table
+
+Query:
+
+SELECT TOP 3 * FROM orders ORDER BY qty DESC;
+
+--------------------------------------------------------------------------------------
+
+14)Display how many times customers have purchased a product (display 
+count and customerid from orders table)
+
+Query:
+
+SELECT custid ,count(custid) AS Count FROM orders GROUP BY custid;
+
+--------------------------------------------------------------------------------------------
+
+15).Display the list of orders who’s orders made earlier then 5 years from now
+
+Query:
+
+SELECT *
+FROM orders
+WHERE orderdate < DATEADD(YEAR, -5, GETDATE());
+
+--------------------------------------------------------------------------------------
+
+16)Select * from customers where custname is null
+
+Query:
+
+SELECT * FROM customers WHERE custname IS NULL;
+
+--------------------------------------------------------------------------------------
+
+17)Display orderdetails in following format
+OrderID-Date Total(price*qty)
+100-1/1/2000 500
+
+Query:
+
+SELECT CONCAT(orderid,'-',FORMAT(orderdate,'dd/MM/yyyy')) AS  [OrderID-Date],
+price *qty AS Total FROM orders;
+
+-----------------------------------------------------------------------------------
+
+18)Update orders table by decreasing price by 20% for qty > 50
+
+Query:
+
+UPDATE orders SET price=price*1.2 WHERE qty>50;
+
+------------------------------------------------------------------------------------
+
+19)You want to retrieve data for all the orders who made order '1-12-90' 
+having price 4000 – 6000 and sort the column in descending order on 
+price
+
+Query:
+
+SELECT * FROM orders WHERE orderdate='1990-12-01' AND
+price BETWEEN 4000 AND 6000 
+ORDER BY price DESC;
+
+--------------------------------------------------------------------------------------------
+
+20).Display order details in following format
+Custid Price (sum of price) Count (count of qty)
+1 5000 3
+2 4000 9
+3 6700 6
+
+Query:
+
+SELECT custid AS CustId,SUM(price) AS PriceSumofprice,
+SUM(qty) AS Countcountofqty FROM orders GROUP BY custid;
+
+---------------------------------------------------------------------------------------------------
+
+21)Display above details only for price > 4000
+
+Query:
+
+SELECT custid AS CustId,SUM(price) AS PriceSumofprice,
+SUM(qty) AS Countcountofqty FROM orders GROUP BY custid
+HAVING sum(price)>4000;
+
+-------------------------------------------------------------------------------------------------------
+
+22)Write a query to create duplicate table of customer , and name it as 
+custhistory
+
+Query:
+
+SELECT * INTO custhistory FROM customers;
+-------------------------------------------------------------------------------
+a. Delete all the records of custhistory
+
+DELETE FROM custhistory;
+------------------------------------------------------------------------------
+b. Copy records of customers to custhistory where age > 3
+
+INSERT INTO custhistory(custid,custname,age,caddress,cphone)
+SELECT custid,custname,age,caddress,cphone FROM customers WHERE age>3;
+SELECT * FROM custhistory;
+

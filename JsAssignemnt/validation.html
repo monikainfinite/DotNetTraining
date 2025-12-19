@@ -1,0 +1,35 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h2>Login form</h2>
+        <form id="loginForm" onsubmit="return  validateForm()">
+        <label>Username: </label>
+        <input type="text" id="username"><br>
+        <label>Password: </label>
+        <input type="password" id="password"><br>
+        <input type="submit" value="Login">
+    </form>
+    <script>
+        function validateForm(){
+            var username=document.getElementById("username");
+            var password=document.getElementById("password");
+            var user=username.value;
+            var pass=password.value;
+           
+            if(user=="admin" && pass=="india"){
+                alert("login sucessful");
+                window.location="demo1.html";
+            }
+            else{
+                alert("invalid username and password");
+                username.style.backgroundColor="red";
+                password.style.backgroundColor="red";
+            }
+            return false;
+        }
+
+    </script>
+    </body>
+</html>

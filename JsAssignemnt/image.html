@@ -1,0 +1,26 @@
+<html>
+    <head>
+     <style>
+         #slider {
+            width: 400px;
+            height: 300px;
+        }
+     </style>
+    </head>
+    <body>
+        <h2>Image slider </h2>
+        <img id="slider" src="img1.jpg">
+        <script>
+            var images=["img1.jpg","img2.jpg","img3.jpg"];
+            var i=0;
+            function changeImage(){
+                i++;
+                if(i>=images.length){
+                    i=0;
+                }
+                document.getElementById("slider").src=images[i];
+            }
+            setInterval(changeImage,2000);
+        </script>
+    </body>
+</html>

@@ -44,7 +44,7 @@ namespace adonetcodingass
             dr.Close();
 
         }
-        //Add a new student
+        //2)Add a new student
          public void AddnewStudent()
         {
             Console.WriteLine("enter full name");
@@ -66,7 +66,7 @@ namespace adonetcodingass
 
           
         }
-     // Search students by department
+     // 3)Search students by department
 
         public void search()
         {
@@ -82,7 +82,7 @@ namespace adonetcodingass
             dr.Close();
 
         }
-        // Display enrolled courses for a student
+        // 4)Display enrolled courses for a student
 
 
         public void Displayenrollcouress()
@@ -101,6 +101,7 @@ namespace adonetcodingass
 
             dr.Close();
         }
+        //5)update grade
         public void update()
         {
             Console.WriteLine("enter enrollment id ");

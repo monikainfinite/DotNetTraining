@@ -20,10 +20,10 @@ namespace adonet_ef
             //c.SearchDept();
             //c.Display();
             //c.Displaydates();
-            c.CalBonus();
-            
-
-
+            //c.CalBonus();
+            //  c.SqlqueryDemo();
+            //c.DMLDemo();
+            c.spdemo();
         }
     }
 }

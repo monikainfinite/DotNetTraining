@@ -1,0 +1,13 @@
+C:\DotNetTraining\modelfirstdemo\bin\Debug\modelfirstdemo.exe.config
+C:\DotNetTraining\modelfirstdemo\bin\Debug\modelfirstdemo.exe
+C:\DotNetTraining\modelfirstdemo\bin\Debug\modelfirstdemo.pdb
+C:\DotNetTraining\modelfirstdemo\bin\Debug\EntityFramework.dll
+C:\DotNetTraining\modelfirstdemo\bin\Debug\EntityFramework.SqlServer.dll
+C:\DotNetTraining\modelfirstdemo\bin\Debug\EntityFramework.xml
+C:\DotNetTraining\modelfirstdemo\bin\Debug\EntityFramework.SqlServer.xml
+C:\DotNetTraining\modelfirstdemo\obj\Debug\modelfirstdemo.csproj.AssemblyReference.cache
+C:\DotNetTraining\modelfirstdemo\obj\Debug\modelfirstdemo.csproj.CoreCompileInputs.cache
+C:\DotNetTraining\modelfirstdemo\obj\Debug\modelfir.C5F978AF.Up2Date
+C:\DotNetTraining\modelfirstdemo\obj\Debug\modelfirstdemo.exe
+C:\DotNetTraining\modelfirstdemo\obj\Debug\modelfirstdemo.pdb
+C:\DotNetTraining\modelfirstdemo\obj\Debug\modelfirstdemo.exe.config

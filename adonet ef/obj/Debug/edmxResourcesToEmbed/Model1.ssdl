@@ -29,6 +29,203 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Function Name="addpro" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="a" Type="int" Mode="In" />
+    <Parameter Name="b" Type="int" Mode="In" />
+  </Function>
+  <Function Name="addpro1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="a" Type="int" Mode="In" />
+    <Parameter Name="b" Type="int" Mode="In" />
+  </Function>
+  <Function Name="Addproc2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="a" Type="int" Mode="In" />
+    <Parameter Name="b" Type="int" Mode="In" />
+    <Parameter Name="c" Type="int" Mode="InOut" />
+    <Parameter Name="d" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="custprocedure" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="custId" Type="int" Mode="In" />
+    <Parameter Name="custname" Type="varchar" Mode="In" />
+    <Parameter Name="Age" Type="int" Mode="In" />
+    <Parameter Name="caddress" Type="varchar" Mode="In" />
+    <Parameter Name="cphone" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="discount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="orderid" Type="int" Nullable="false" />
+          <Property Name="custid" Type="int" />
+          <Property Name="orderdate" Type="date" />
+          <Property Name="product" Type="varchar" MaxLength="50" />
+          <Property Name="price" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="qty" Type="int" />
+          <Property Name="productid" Type="int" />
+          <Property Name="discountedprice" Type="numeric" Precision="13" Scale="4" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="dislplaydata" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="tbl" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="displaydata" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="tbl" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="divide" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="a" Type="int" Mode="In" />
+    <Parameter Name="b" Type="int" Mode="In" />
+  </Function>
+  <Function Name="fn_disc" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="decimal">
+    <Parameter Name="price" Type="decimal" Mode="In" />
+  </Function>
+  <Function Name="fn_discount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="productname" Type="varchar" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="custid" Type="int" />
+          <Property Name="product" Type="varchar" MaxLength="50" />
+          <Property Name="originalprice" Type="float" />
+          <Property Name="discountprice" Type="float" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="fn_Employees" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="length" Type="nvarchar" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="EmployeeID" Type="int" Nullable="false" />
+          <Property Name="Employee Name" Type="nvarchar" MaxLength="61" Nullable="false" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="fn_getcustomers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="a" Type="varchar" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="custid" Type="int" Nullable="false" />
+          <Property Name="custname" Type="varchar" MaxLength="50" />
+          <Property Name="age" Type="int" />
+          <Property Name="caddress" Type="varchar" MaxLength="100" />
+          <Property Name="cphone" Type="varchar" MaxLength="15" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="fn_greatest" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int">
+    <Parameter Name="n1" Type="int" Mode="In" />
+    <Parameter Name="n2" Type="int" Mode="In" />
+    <Parameter Name="n3" Type="int" Mode="In" />
+  </Function>
+  <Function Name="fn_yrs" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="n" Type="int" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="orderid" Type="int" Nullable="false" />
+          <Property Name="custid" Type="int" />
+          <Property Name="orderdate" Type="date" />
+          <Property Name="product" Type="varchar" MaxLength="50" />
+          <Property Name="price" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="qty" Type="int" />
+          <Property Name="productid" Type="int" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="getbyaddress" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="a" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="getcustdetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="r1" Type="int" Mode="In" />
+    <Parameter Name="r2" Type="int" Mode="In" />
+  </Function>
+  <Function Name="GetEmployees" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="startdate" Type="date" Mode="In" />
+    <Parameter Name="enddate" Type="date" Mode="In" />
+  </Function>
+  <Function Name="myproc" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="cname" Type="varchar" Mode="In" />
+    <Parameter Name="age" Type="int" Mode="In" />
+  </Function>
+  <Function Name="orderprocedure" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="d1" Type="date" Mode="In" />
+    <Parameter Name="d2" Type="date" Mode="In" />
+  </Function>
+  <Function Name="pd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="decimal">
+    <Parameter Name="pname" Type="varchar" Mode="In" />
+    <Parameter Name="price" Type="decimal" Mode="In" />
+  </Function>
+  <Function Name="pGetProductsByCategory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="categoryname" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="ProductDiscount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="decimal">
+    <Parameter Name="pname" Type="varchar" Mode="In" />
+    <Parameter Name="price" Type="decimal" Mode="In" />
+  </Function>
+  <Function Name="showbysal" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="salary" Type="decimal" Mode="In" />
+  </Function>
+  <Function Name="showdata" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_getCustomers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_getdata" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_getemp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="d" Type="int" Mode="In" />
+    <Parameter Name="sal" Type="decimal" Mode="In" />
+  </Function>
+  <Function Name="sp_GetEmployeeDet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Empid" Type="int" Mode="In" />
+    <Parameter Name="DateofJoin" Type="date" Mode="InOut" />
+    <Parameter Name="DeptId" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="spAddEmployee" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="name" Type="varchar" Mode="In" />
+    <Parameter Name="department" Type="varchar" Mode="In" />
+    <Parameter Name="salary" Type="decimal" Mode="In" />
+  </Function>
+  <Function Name="spGetdata" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="custid" Type="int" Mode="In" />
+    <Parameter Name="qty" Type="int" Mode="InOut" />
+    <Parameter Name="pid" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="spGetOrderDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="custid" Type="int" Mode="In" />
+    <Parameter Name="qty" Type="int" Mode="InOut" />
+    <Parameter Name="productid" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="spSafeOrderInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="orderid" Type="int" Mode="In" />
+    <Parameter Name="custid" Type="int" Mode="In" />
+    <Parameter Name="od" Type="date" Mode="In" />
+    <Parameter Name="pro" Type="varchar" Mode="In" />
+    <Parameter Name="price" Type="decimal" Mode="In" />
+    <Parameter Name="qty" Type="int" Mode="In" />
+  </Function>
+  <Function Name="spUpdateSalary" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="empid" Type="int" Mode="In" />
+    <Parameter Name="percentage" Type="decimal" Mode="In" />
+    <Parameter Name="updatesalary" Type="decimal" Mode="InOut" />
+  </Function>
+  <Function Name="test" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="custid" Type="int" Nullable="false" />
+          <Property Name="custname" Type="varchar" MaxLength="50" />
+          <Property Name="caddress" Type="varchar" MaxLength="100" />
+          <Property Name="orderid" Type="int" Nullable="false" />
+          <Property Name="orderdate" Type="date" />
+          <Property Name="qty" Type="int" />
+          <Property Name="productid" Type="int" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
   <EntityContainer Name="infinitedbModelStoreContainer">
     <EntitySet Name="newDepartment" EntityType="Self.newDepartment" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="newEmployee" EntityType="Self.newEmployee" Schema="dbo" store:Type="Tables" />

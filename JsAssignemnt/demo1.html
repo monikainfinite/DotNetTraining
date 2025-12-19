@@ -1,0 +1,53 @@
+<!-- 1. Develop JavaScript code to find greatest of 3 numbers -->
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+           var a=30;
+var b=25;
+var c=15;
+var greatest;
+if(a>=b && a>=c){
+    greatest=a;
+}
+else if (b>=a && b>=c){
+    greatest=b;
+}
+else{
+    greatest=c;
+}
+document.writeln("The greatest number is "+greatest+"<br><hr>");
+//develop JavaScript to find simple interest of number
+var principal=Number(prompt("enter amount"));
+var rate=Number(prompt("enter rate of interest"));
+var time =Number(prompt("enter time"));
+var si=(principal*rate*time)/100;
+alert("simple interest is "+si);
+//Write a JavaScript program to get the difference between a given number and 13, if the number is
+//greater than 13 return double the difference.
+var num=Number(prompt("enter a number"));
+var res;
+if(num>13){
+    res=2*(num-13);
+}
+else{
+    res=13-num;
+}
+document.writeln("the res is "+res+"<hr>"
+);
+
+// 4.Write a JavaScript for loop that will iterate from 0 to 15. For each iteration, it will check if the 
+// current number is odd or even, and display a message to the screen..
+for(i=0;i<=15;i++){
+    if(i%2==0){
+        document.write(i+" is even<br>");
+    }
+    else{
+        document.write(i+" is odd<br>");
+    }
+}
+        </script>
+    </body>
+</html>

@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="infinitedbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="infinitedbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="newDepartment">
           <Key>
             <PropertyRef Name="DeptID" />
@@ -34,6 +34,203 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Function Name="addpro" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="a" Type="int" Mode="In" />
+          <Parameter Name="b" Type="int" Mode="In" />
+        </Function>
+        <Function Name="addpro1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="a" Type="int" Mode="In" />
+          <Parameter Name="b" Type="int" Mode="In" />
+        </Function>
+        <Function Name="Addproc2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="a" Type="int" Mode="In" />
+          <Parameter Name="b" Type="int" Mode="In" />
+          <Parameter Name="c" Type="int" Mode="InOut" />
+          <Parameter Name="d" Type="int" Mode="InOut" />
+        </Function>
+        <Function Name="custprocedure" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="custId" Type="int" Mode="In" />
+          <Parameter Name="custname" Type="varchar" Mode="In" />
+          <Parameter Name="Age" Type="int" Mode="In" />
+          <Parameter Name="caddress" Type="varchar" Mode="In" />
+          <Parameter Name="cphone" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="discount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <ReturnType>
+            <CollectionType>
+              <RowType>
+                <Property Name="orderid" Type="int" Nullable="false" />
+                <Property Name="custid" Type="int" />
+                <Property Name="orderdate" Type="date" />
+                <Property Name="product" Type="varchar" MaxLength="50" />
+                <Property Name="price" Type="decimal" Precision="10" Scale="2" />
+                <Property Name="qty" Type="int" />
+                <Property Name="productid" Type="int" />
+                <Property Name="discountedprice" Type="numeric" Precision="13" Scale="4" />
+              </RowType>
+            </CollectionType>
+          </ReturnType>
+        </Function>
+        <Function Name="dislplaydata" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="tbl" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="displaydata" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="tbl" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="divide" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="a" Type="int" Mode="In" />
+          <Parameter Name="b" Type="int" Mode="In" />
+        </Function>
+        <Function Name="fn_disc" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="decimal">
+          <Parameter Name="price" Type="decimal" Mode="In" />
+        </Function>
+        <Function Name="fn_discount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="productname" Type="varchar" Mode="In" />
+          <ReturnType>
+            <CollectionType>
+              <RowType>
+                <Property Name="custid" Type="int" />
+                <Property Name="product" Type="varchar" MaxLength="50" />
+                <Property Name="originalprice" Type="float" />
+                <Property Name="discountprice" Type="float" />
+              </RowType>
+            </CollectionType>
+          </ReturnType>
+        </Function>
+        <Function Name="fn_Employees" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="length" Type="nvarchar" Mode="In" />
+          <ReturnType>
+            <CollectionType>
+              <RowType>
+                <Property Name="EmployeeID" Type="int" Nullable="false" />
+                <Property Name="Employee Name" Type="nvarchar" MaxLength="61" Nullable="false" />
+              </RowType>
+            </CollectionType>
+          </ReturnType>
+        </Function>
+        <Function Name="fn_getcustomers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="a" Type="varchar" Mode="In" />
+          <ReturnType>
+            <CollectionType>
+              <RowType>
+                <Property Name="custid" Type="int" Nullable="false" />
+                <Property Name="custname" Type="varchar" MaxLength="50" />
+                <Property Name="age" Type="int" />
+                <Property Name="caddress" Type="varchar" MaxLength="100" />
+                <Property Name="cphone" Type="varchar" MaxLength="15" />
+              </RowType>
+            </CollectionType>
+          </ReturnType>
+        </Function>
+        <Function Name="fn_greatest" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int">
+          <Parameter Name="n1" Type="int" Mode="In" />
+          <Parameter Name="n2" Type="int" Mode="In" />
+          <Parameter Name="n3" Type="int" Mode="In" />
+        </Function>
+        <Function Name="fn_yrs" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="n" Type="int" Mode="In" />
+          <ReturnType>
+            <CollectionType>
+              <RowType>
+                <Property Name="orderid" Type="int" Nullable="false" />
+                <Property Name="custid" Type="int" />
+                <Property Name="orderdate" Type="date" />
+                <Property Name="product" Type="varchar" MaxLength="50" />
+                <Property Name="price" Type="decimal" Precision="10" Scale="2" />
+                <Property Name="qty" Type="int" />
+                <Property Name="productid" Type="int" />
+              </RowType>
+            </CollectionType>
+          </ReturnType>
+        </Function>
+        <Function Name="getbyaddress" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="a" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="getcustdetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="r1" Type="int" Mode="In" />
+          <Parameter Name="r2" Type="int" Mode="In" />
+        </Function>
+        <Function Name="GetEmployees" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="startdate" Type="date" Mode="In" />
+          <Parameter Name="enddate" Type="date" Mode="In" />
+        </Function>
+        <Function Name="myproc" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="cname" Type="varchar" Mode="In" />
+          <Parameter Name="age" Type="int" Mode="In" />
+        </Function>
+        <Function Name="orderprocedure" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="d1" Type="date" Mode="In" />
+          <Parameter Name="d2" Type="date" Mode="In" />
+        </Function>
+        <Function Name="pd" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="decimal">
+          <Parameter Name="pname" Type="varchar" Mode="In" />
+          <Parameter Name="price" Type="decimal" Mode="In" />
+        </Function>
+        <Function Name="pGetProductsByCategory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="categoryname" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="ProductDiscount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="decimal">
+          <Parameter Name="pname" Type="varchar" Mode="In" />
+          <Parameter Name="price" Type="decimal" Mode="In" />
+        </Function>
+        <Function Name="showbysal" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="salary" Type="decimal" Mode="In" />
+        </Function>
+        <Function Name="showdata" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="sp_getCustomers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="sp_getdata" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="sp_getemp" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="d" Type="int" Mode="In" />
+          <Parameter Name="sal" Type="decimal" Mode="In" />
+        </Function>
+        <Function Name="sp_GetEmployeeDet" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Empid" Type="int" Mode="In" />
+          <Parameter Name="DateofJoin" Type="date" Mode="InOut" />
+          <Parameter Name="DeptId" Type="int" Mode="InOut" />
+        </Function>
+        <Function Name="spAddEmployee" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="name" Type="varchar" Mode="In" />
+          <Parameter Name="department" Type="varchar" Mode="In" />
+          <Parameter Name="salary" Type="decimal" Mode="In" />
+        </Function>
+        <Function Name="spGetdata" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="custid" Type="int" Mode="In" />
+          <Parameter Name="qty" Type="int" Mode="InOut" />
+          <Parameter Name="pid" Type="int" Mode="InOut" />
+        </Function>
+        <Function Name="spGetOrderDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="custid" Type="int" Mode="In" />
+          <Parameter Name="qty" Type="int" Mode="InOut" />
+          <Parameter Name="productid" Type="int" Mode="InOut" />
+        </Function>
+        <Function Name="spSafeOrderInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="orderid" Type="int" Mode="In" />
+          <Parameter Name="custid" Type="int" Mode="In" />
+          <Parameter Name="od" Type="date" Mode="In" />
+          <Parameter Name="pro" Type="varchar" Mode="In" />
+          <Parameter Name="price" Type="decimal" Mode="In" />
+          <Parameter Name="qty" Type="int" Mode="In" />
+        </Function>
+        <Function Name="spUpdateSalary" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="empid" Type="int" Mode="In" />
+          <Parameter Name="percentage" Type="decimal" Mode="In" />
+          <Parameter Name="updatesalary" Type="decimal" Mode="InOut" />
+        </Function>
+        <Function Name="test" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <ReturnType>
+            <CollectionType>
+              <RowType>
+                <Property Name="custid" Type="int" Nullable="false" />
+                <Property Name="custname" Type="varchar" MaxLength="50" />
+                <Property Name="caddress" Type="varchar" MaxLength="100" />
+                <Property Name="orderid" Type="int" Nullable="false" />
+                <Property Name="orderdate" Type="date" />
+                <Property Name="qty" Type="int" />
+                <Property Name="productid" Type="int" />
+              </RowType>
+            </CollectionType>
+          </ReturnType>
+        </Function>
         <EntityContainer Name="infinitedbModelStoreContainer">
           <EntitySet Name="newDepartment" EntityType="Self.newDepartment" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="newEmployee" EntityType="Self.newEmployee" Schema="dbo" store:Type="Tables" />
@@ -42,8 +239,7 @@
             <End Role="newEmployee" EntitySet="newEmployee" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="infinitedbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -85,7 +281,237 @@
             <End Role="newDepartment" EntitySet="newDepartments" />
             <End Role="newEmployee" EntitySet="newEmployees" />
           </AssociationSet>
+          <FunctionImport Name="addpro">
+            <Parameter Name="a" Mode="In" Type="Int32" />
+            <Parameter Name="b" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="addpro1">
+            <Parameter Name="a" Mode="In" Type="Int32" />
+            <Parameter Name="b" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="Addproc2">
+            <Parameter Name="a" Mode="In" Type="Int32" />
+            <Parameter Name="b" Mode="In" Type="Int32" />
+            <Parameter Name="c" Mode="InOut" Type="Int32" />
+            <Parameter Name="d" Mode="InOut" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="custprocedure">
+            <Parameter Name="custId" Mode="In" Type="Int32" />
+            <Parameter Name="custname" Mode="In" Type="String" />
+            <Parameter Name="Age" Mode="In" Type="Int32" />
+            <Parameter Name="caddress" Mode="In" Type="String" />
+            <Parameter Name="cphone" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="discount" IsComposable="true" ReturnType="Collection(infinitedbModel.discount_Result)" />
+          <FunctionImport Name="dislplaydata" ReturnType="Collection(infinitedbModel.dislplaydata_Result)">
+            <Parameter Name="tbl" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="displaydata">
+            <Parameter Name="tbl" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="divide">
+            <Parameter Name="a" Mode="In" Type="Int32" />
+            <Parameter Name="b" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="fn_discount" IsComposable="true" ReturnType="Collection(infinitedbModel.fn_discount_Result)">
+            <Parameter Name="productname" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="fn_Employees" IsComposable="true" ReturnType="Collection(infinitedbModel.fn_Employees_Result)">
+            <Parameter Name="length" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="fn_getcustomers" IsComposable="true" ReturnType="Collection(infinitedbModel.fn_getcustomers_Result)">
+            <Parameter Name="a" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="fn_yrs" IsComposable="true" ReturnType="Collection(infinitedbModel.fn_yrs_Result)">
+            <Parameter Name="n" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="getbyaddress" ReturnType="Collection(infinitedbModel.getbyaddress_Result)">
+            <Parameter Name="a" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="getcustdetails" ReturnType="Collection(infinitedbModel.getcustdetails_Result)">
+            <Parameter Name="r1" Mode="In" Type="Int32" />
+            <Parameter Name="r2" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="GetEmployees" ReturnType="Collection(infinitedbModel.GetEmployees_Result)">
+            <Parameter Name="startdate" Mode="In" Type="DateTime" />
+            <Parameter Name="enddate" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="myproc">
+            <Parameter Name="cname" Mode="In" Type="String" />
+            <Parameter Name="age" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="orderprocedure" ReturnType="Collection(infinitedbModel.orderprocedure_Result)">
+            <Parameter Name="d1" Mode="In" Type="DateTime" />
+            <Parameter Name="d2" Mode="In" Type="DateTime" />
+          </FunctionImport>
+          <FunctionImport Name="pGetProductsByCategory" ReturnType="Collection(infinitedbModel.pGetProductsByCategory_Result)">
+            <Parameter Name="categoryname" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="showbysal" ReturnType="Collection(infinitedbModel.showbysal_Result)">
+            <Parameter Name="salary" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="showdata" ReturnType="Collection(infinitedbModel.showdata_Result)" />
+          <FunctionImport Name="sp_getCustomers" ReturnType="Collection(infinitedbModel.sp_getCustomers_Result)" />
+          <FunctionImport Name="sp_getdata" />
+          <FunctionImport Name="sp_getemp" ReturnType="Collection(infinitedbModel.sp_getemp_Result)">
+            <Parameter Name="d" Mode="In" Type="Int32" />
+            <Parameter Name="sal" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="sp_GetEmployeeDet">
+            <Parameter Name="Empid" Mode="In" Type="Int32" />
+            <Parameter Name="DateofJoin" Mode="InOut" Type="DateTime" />
+            <Parameter Name="DeptId" Mode="InOut" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="spAddEmployee">
+            <Parameter Name="name" Mode="In" Type="String" />
+            <Parameter Name="department" Mode="In" Type="String" />
+            <Parameter Name="salary" Mode="In" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="spGetdata" ReturnType="Collection(infinitedbModel.spGetdata_Result)">
+            <Parameter Name="custid" Mode="In" Type="Int32" />
+            <Parameter Name="qty" Mode="InOut" Type="Int32" />
+            <Parameter Name="pid" Mode="InOut" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="spGetOrderDetails">
+            <Parameter Name="custid" Mode="In" Type="Int32" />
+            <Parameter Name="qty" Mode="InOut" Type="Int32" />
+            <Parameter Name="productid" Mode="InOut" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="spSafeOrderInsert">
+            <Parameter Name="orderid" Mode="In" Type="Int32" />
+            <Parameter Name="custid" Mode="In" Type="Int32" />
+            <Parameter Name="od" Mode="In" Type="DateTime" />
+            <Parameter Name="pro" Mode="In" Type="String" />
+            <Parameter Name="price" Mode="In" Type="Decimal" />
+            <Parameter Name="qty" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="spUpdateSalary">
+            <Parameter Name="empid" Mode="In" Type="Int32" />
+            <Parameter Name="percentage" Mode="In" Type="Decimal" />
+            <Parameter Name="updatesalary" Mode="InOut" Type="Decimal" />
+          </FunctionImport>
+          <FunctionImport Name="test" IsComposable="true" ReturnType="Collection(infinitedbModel.test_Result)" />
         </EntityContainer>
+        <ComplexType Name="discount_Result">
+          <Property Type="Int32" Name="orderid" Nullable="false" />
+          <Property Type="Int32" Name="custid" Nullable="true" />
+          <Property Type="DateTime" Name="orderdate" Nullable="true" Precision="10" />
+          <Property Type="String" Name="product" Nullable="true" MaxLength="50" />
+          <Property Type="Decimal" Name="price" Nullable="true" Precision="10" Scale="2" />
+          <Property Type="Int32" Name="qty" Nullable="true" />
+          <Property Type="Int32" Name="productid" Nullable="true" />
+          <Property Type="Decimal" Name="discountedprice" Nullable="true" Precision="13" Scale="4" />
+        </ComplexType>
+        <ComplexType Name="dislplaydata_Result">
+          <Property Type="Int32" Name="custid" Nullable="false" />
+          <Property Type="String" Name="custname" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="age" Nullable="true" />
+          <Property Type="String" Name="caddress" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="cphone" Nullable="true" MaxLength="15" />
+        </ComplexType>
+        <ComplexType Name="fn_discount_Result">
+          <Property Type="Int32" Name="custid" Nullable="true" />
+          <Property Type="String" Name="product" Nullable="true" MaxLength="50" />
+          <Property Type="Double" Name="originalprice" Nullable="true" />
+          <Property Type="Double" Name="discountprice" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="fn_Employees_Result">
+          <Property Type="Int32" Name="EmployeeID" Nullable="false" />
+          <Property Type="String" Name="Employee_Name" Nullable="false" MaxLength="61" />
+        </ComplexType>
+        <ComplexType Name="fn_getcustomers_Result">
+          <Property Type="Int32" Name="custid" Nullable="false" />
+          <Property Type="String" Name="custname" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="age" Nullable="true" />
+          <Property Type="String" Name="caddress" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="cphone" Nullable="true" MaxLength="15" />
+        </ComplexType>
+        <ComplexType Name="fn_yrs_Result">
+          <Property Type="Int32" Name="orderid" Nullable="false" />
+          <Property Type="Int32" Name="custid" Nullable="true" />
+          <Property Type="DateTime" Name="orderdate" Nullable="true" Precision="10" />
+          <Property Type="String" Name="product" Nullable="true" MaxLength="50" />
+          <Property Type="Decimal" Name="price" Nullable="true" Precision="10" Scale="2" />
+          <Property Type="Int32" Name="qty" Nullable="true" />
+          <Property Type="Int32" Name="productid" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="getbyaddress_Result">
+          <Property Type="Int32" Name="custid" Nullable="false" />
+          <Property Type="String" Name="custname" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="age" Nullable="true" />
+          <Property Type="String" Name="caddress" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="cphone" Nullable="true" MaxLength="15" />
+        </ComplexType>
+        <ComplexType Name="getcustdetails_Result">
+          <Property Type="Int32" Name="custid" Nullable="false" />
+          <Property Type="String" Name="custname" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="age" Nullable="true" />
+          <Property Type="String" Name="caddress" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="cphone" Nullable="true" MaxLength="15" />
+        </ComplexType>
+        <ComplexType Name="GetEmployees_Result">
+          <Property Type="Int32" Name="EmpID" Nullable="false" />
+          <Property Type="String" Name="EmpName" Nullable="true" MaxLength="100" />
+          <Property Type="Decimal" Name="Salary" Nullable="true" Precision="10" Scale="2" />
+          <Property Type="DateTime" Name="DateOfJoin" Nullable="true" />
+          <Property Type="Int32" Name="DeptID" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="orderprocedure_Result">
+          <Property Type="Int32" Name="orderid" Nullable="false" />
+          <Property Type="Int32" Name="custid" Nullable="true" />
+          <Property Type="DateTime" Name="orderdate" Nullable="true" />
+          <Property Type="String" Name="product" Nullable="true" MaxLength="50" />
+          <Property Type="Decimal" Name="price" Nullable="true" Precision="10" Scale="2" />
+          <Property Type="Int32" Name="qty" Nullable="true" />
+          <Property Type="Int32" Name="productid" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="pGetProductsByCategory_Result">
+          <Property Type="Int32" Name="pid" Nullable="false" />
+          <Property Type="String" Name="pname" Nullable="true" MaxLength="20" />
+          <Property Type="String" Name="categoryname" Nullable="true" MaxLength="40" />
+          <Property Type="Decimal" Name="price" Nullable="true" Precision="10" Scale="2" />
+        </ComplexType>
+        <ComplexType Name="showbysal_Result">
+          <Property Type="Int32" Name="EmpID" Nullable="false" />
+          <Property Type="String" Name="EmpName" Nullable="true" MaxLength="100" />
+          <Property Type="Decimal" Name="Salary" Nullable="true" Precision="10" Scale="2" />
+          <Property Type="DateTime" Name="DateOfJoin" Nullable="true" />
+          <Property Type="Int32" Name="DeptID" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="showdata_Result">
+          <Property Type="Int32" Name="custid" Nullable="false" />
+          <Property Type="String" Name="custname" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="age" Nullable="true" />
+          <Property Type="String" Name="caddress" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="cphone" Nullable="true" MaxLength="15" />
+        </ComplexType>
+        <ComplexType Name="sp_getCustomers_Result">
+          <Property Type="Int32" Name="custid" Nullable="false" />
+          <Property Type="String" Name="custname" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="age" Nullable="true" />
+          <Property Type="String" Name="caddress" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="cphone" Nullable="true" MaxLength="15" />
+        </ComplexType>
+        <ComplexType Name="sp_getemp_Result">
+          <Property Type="Int32" Name="EmpID" Nullable="false" />
+          <Property Type="String" Name="EmpName" Nullable="true" MaxLength="100" />
+          <Property Type="Decimal" Name="Salary" Nullable="true" Precision="10" Scale="2" />
+          <Property Type="DateTime" Name="DateOfJoin" Nullable="true" />
+          <Property Type="Int32" Name="DeptID" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="spGetdata_Result">
+          <Property Type="Int32" Name="qty" Nullable="true" />
+          <Property Type="Int32" Name="pid" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="test_Result">
+          <Property Type="Int32" Name="custid" Nullable="false" />
+          <Property Type="String" Name="custname" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="caddress" Nullable="true" MaxLength="100" />
+          <Property Type="Int32" Name="orderid" Nullable="false" />
+          <Property Type="DateTime" Name="orderdate" Nullable="true" Precision="10" />
+          <Property Type="Int32" Name="qty" Nullable="true" />
+          <Property Type="Int32" Name="productid" Nullable="true" />
+        </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -111,6 +537,207 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="addpro" FunctionName="infinitedbModel.Store.addpro" />
+          <FunctionImportMapping FunctionImportName="addpro1" FunctionName="infinitedbModel.Store.addpro1" />
+          <FunctionImportMapping FunctionImportName="Addproc2" FunctionName="infinitedbModel.Store.Addproc2" />
+          <FunctionImportMapping FunctionImportName="custprocedure" FunctionName="infinitedbModel.Store.custprocedure" />
+          <FunctionImportMapping FunctionImportName="discount" FunctionName="infinitedbModel.Store.discount">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="infinitedbModel.discount_Result">
+                <ScalarProperty Name="orderid" ColumnName="orderid" />
+                <ScalarProperty Name="custid" ColumnName="custid" />
+                <ScalarProperty Name="orderdate" ColumnName="orderdate" />
+                <ScalarProperty Name="product" ColumnName="product" />
+                <ScalarProperty Name="price" ColumnName="price" />
+                <ScalarProperty Name="qty" ColumnName="qty" />
+                <ScalarProperty Name="productid" ColumnName="productid" />
+                <ScalarProperty Name="discountedprice" ColumnName="discountedprice" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="dislplaydata" FunctionName="infinitedbModel.Store.dislplaydata">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="infinitedbModel.dislplaydata_Result">
+                <ScalarProperty Name="custid" ColumnName="custid" />
+                <ScalarProperty Name="custname" ColumnName="custname" />
+                <ScalarProperty Name="age" ColumnName="age" />
+                <ScalarProperty Name="caddress" ColumnName="caddress" />
+                <ScalarProperty Name="cphone" ColumnName="cphone" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="displaydata" FunctionName="infinitedbModel.Store.displaydata" />
+          <FunctionImportMapping FunctionImportName="divide" FunctionName="infinitedbModel.Store.divide" />
+          <FunctionImportMapping FunctionImportName="fn_discount" FunctionName="infinitedbModel.Store.fn_discount">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="infinitedbModel.fn_discount_Result">
+                <ScalarProperty Name="custid" ColumnName="custid" />
+                <ScalarProperty Name="product" ColumnName="product" />
+                <ScalarProperty Name="originalprice" ColumnName="originalprice" />
+                <ScalarProperty Name="discountprice" ColumnName="discountprice" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="fn_Employees" FunctionName="infinitedbModel.Store.fn_Employees">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="infinitedbModel.fn_Employees_Result">
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+                <ScalarProperty Name="Employee_Name" ColumnName="Employee Name" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="fn_getcustomers" FunctionName="infinitedbModel.Store.fn_getcustomers">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="infinitedbModel.fn_getcustomers_Result">
+                <ScalarProperty Name="custid" ColumnName="custid" />
+                <ScalarProperty Name="custname" ColumnName="custname" />
+                <ScalarProperty Name="age" ColumnName="age" />
+                <ScalarProperty Name="caddress" ColumnName="caddress" />
+                <ScalarProperty Name="cphone" ColumnName="cphone" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="fn_yrs" FunctionName="infinitedbModel.Store.fn_yrs">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="infinitedbModel.fn_yrs_Result">
+                <ScalarProperty Name="orderid" ColumnName="orderid" />
+                <ScalarProperty Name="custid" ColumnName="custid" />
+                <ScalarProperty Name="orderdate" ColumnName="orderdate" />
+                <ScalarProperty Name="product" ColumnName="product" />
+                <ScalarProperty Name="price" ColumnName="price" />
+                <ScalarProperty Name="qty" ColumnName="qty" />
+                <ScalarProperty Name="productid" ColumnName="productid" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="getbyaddress" FunctionName="infinitedbModel.Store.getbyaddress">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="infinitedbModel.getbyaddress_Result">
+                <ScalarProperty Name="custid" ColumnName="custid" />
+                <ScalarProperty Name="custname" ColumnName="custname" />
+                <ScalarProperty Name="age" ColumnName="age" />
+                <ScalarProperty Name="caddress" ColumnName="caddress" />
+                <ScalarProperty Name="cphone" ColumnName="cphone" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="getcustdetails" FunctionName="infinitedbModel.Store.getcustdetails">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="infinitedbModel.getcustdetails_Result">
+                <ScalarProperty Name="custid" ColumnName="custid" />
+                <ScalarProperty Name="custname" ColumnName="custname" />
+                <ScalarProperty Name="age" ColumnName="age" />
+                <ScalarProperty Name="caddress" ColumnName="caddress" />
+                <ScalarProperty Name="cphone" ColumnName="cphone" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="GetEmployees" FunctionName="infinitedbModel.Store.GetEmployees">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="infinitedbModel.GetEmployees_Result">
+                <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+                <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+                <ScalarProperty Name="Salary" ColumnName="Salary" />
+                <ScalarProperty Name="DateOfJoin" ColumnName="DateOfJoin" />
+                <ScalarProperty Name="DeptID" ColumnName="DeptID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="myproc" FunctionName="infinitedbModel.Store.myproc" />
+          <FunctionImportMapping FunctionImportName="orderprocedure" FunctionName="infinitedbModel.Store.orderprocedure">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="infinitedbModel.orderprocedure_Result">
+                <ScalarProperty Name="orderid" ColumnName="orderid" />
+                <ScalarProperty Name="custid" ColumnName="custid" />
+                <ScalarProperty Name="orderdate" ColumnName="orderdate" />
+                <ScalarProperty Name="product" ColumnName="product" />
+                <ScalarProperty Name="price" ColumnName="price" />
+                <ScalarProperty Name="qty" ColumnName="qty" />
+                <ScalarProperty Name="productid" ColumnName="productid" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="pGetProductsByCategory" FunctionName="infinitedbModel.Store.pGetProductsByCategory">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="infinitedbModel.pGetProductsByCategory_Result">
+                <ScalarProperty Name="pid" ColumnName="pid" />
+                <ScalarProperty Name="pname" ColumnName="pname" />
+                <ScalarProperty Name="categoryname" ColumnName="categoryname" />
+                <ScalarProperty Name="price" ColumnName="price" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="showbysal" FunctionName="infinitedbModel.Store.showbysal">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="infinitedbModel.showbysal_Result">
+                <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+                <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+                <ScalarProperty Name="Salary" ColumnName="Salary" />
+                <ScalarProperty Name="DateOfJoin" ColumnName="DateOfJoin" />
+                <ScalarProperty Name="DeptID" ColumnName="DeptID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="showdata" FunctionName="infinitedbModel.Store.showdata">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="infinitedbModel.showdata_Result">
+                <ScalarProperty Name="custid" ColumnName="custid" />
+                <ScalarProperty Name="custname" ColumnName="custname" />
+                <ScalarProperty Name="age" ColumnName="age" />
+                <ScalarProperty Name="caddress" ColumnName="caddress" />
+                <ScalarProperty Name="cphone" ColumnName="cphone" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_getCustomers" FunctionName="infinitedbModel.Store.sp_getCustomers">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="infinitedbModel.sp_getCustomers_Result">
+                <ScalarProperty Name="custid" ColumnName="custid" />
+                <ScalarProperty Name="custname" ColumnName="custname" />
+                <ScalarProperty Name="age" ColumnName="age" />
+                <ScalarProperty Name="caddress" ColumnName="caddress" />
+                <ScalarProperty Name="cphone" ColumnName="cphone" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_getdata" FunctionName="infinitedbModel.Store.sp_getdata" />
+          <FunctionImportMapping FunctionImportName="sp_getemp" FunctionName="infinitedbModel.Store.sp_getemp">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="infinitedbModel.sp_getemp_Result">
+                <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+                <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+                <ScalarProperty Name="Salary" ColumnName="Salary" />
+                <ScalarProperty Name="DateOfJoin" ColumnName="DateOfJoin" />
+                <ScalarProperty Name="DeptID" ColumnName="DeptID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_GetEmployeeDet" FunctionName="infinitedbModel.Store.sp_GetEmployeeDet" />
+          <FunctionImportMapping FunctionImportName="spAddEmployee" FunctionName="infinitedbModel.Store.spAddEmployee" />
+          <FunctionImportMapping FunctionImportName="spGetdata" FunctionName="infinitedbModel.Store.spGetdata">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="infinitedbModel.spGetdata_Result">
+                <ScalarProperty Name="qty" ColumnName="qty" />
+                <ScalarProperty Name="pid" ColumnName="pid" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="spGetOrderDetails" FunctionName="infinitedbModel.Store.spGetOrderDetails" />
+          <FunctionImportMapping FunctionImportName="spSafeOrderInsert" FunctionName="infinitedbModel.Store.spSafeOrderInsert" />
+          <FunctionImportMapping FunctionImportName="spUpdateSalary" FunctionName="infinitedbModel.Store.spUpdateSalary" />
+          <FunctionImportMapping FunctionImportName="test" FunctionName="infinitedbModel.Store.test">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="infinitedbModel.test_Result">
+                <ScalarProperty Name="custid" ColumnName="custid" />
+                <ScalarProperty Name="custname" ColumnName="custname" />
+                <ScalarProperty Name="caddress" ColumnName="caddress" />
+                <ScalarProperty Name="orderid" ColumnName="orderid" />
+                <ScalarProperty Name="orderdate" ColumnName="orderdate" />
+                <ScalarProperty Name="qty" ColumnName="qty" />
+                <ScalarProperty Name="productid" ColumnName="productid" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

@@ -12,6 +12,8 @@ namespace adonet_ef
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Core.Objects;
+    using System.Linq;
     
     public partial class infinitedbEntities : DbContext
     {
@@ -27,5 +29,345 @@ namespace adonet_ef
     
         public virtual DbSet<newDepartment> newDepartments { get; set; }
         public virtual DbSet<newEmployee> newEmployees { get; set; }
+    
+        public virtual int addpro(Nullable<int> a, Nullable<int> b)
+        {
+            var aParameter = a.HasValue ?
+                new ObjectParameter("a", a) :
+                new ObjectParameter("a", typeof(int));
+    
+            var bParameter = b.HasValue ?
+                new ObjectParameter("b", b) :
+                new ObjectParameter("b", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("addpro", aParameter, bParameter);
+        }
+    
+        public virtual int addpro1(Nullable<int> a, Nullable<int> b)
+        {
+            var aParameter = a.HasValue ?
+                new ObjectParameter("a", a) :
+                new ObjectParameter("a", typeof(int));
+    
+            var bParameter = b.HasValue ?
+                new ObjectParameter("b", b) :
+                new ObjectParameter("b", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("addpro1", aParameter, bParameter);
+        }
+    
+        public virtual int Addproc2(Nullable<int> a, Nullable<int> b, ObjectParameter c, ObjectParameter d)
+        {
+            var aParameter = a.HasValue ?
+                new ObjectParameter("a", a) :
+                new ObjectParameter("a", typeof(int));
+    
+            var bParameter = b.HasValue ?
+                new ObjectParameter("b", b) :
+                new ObjectParameter("b", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("Addproc2", aParameter, bParameter, c, d);
+        }
+    
+        public virtual int custprocedure(Nullable<int> custId, string custname, Nullable<int> age, string caddress, string cphone)
+        {
+            var custIdParameter = custId.HasValue ?
+                new ObjectParameter("custId", custId) :
+                new ObjectParameter("custId", typeof(int));
+    
+            var custnameParameter = custname != null ?
+                new ObjectParameter("custname", custname) :
+                new ObjectParameter("custname", typeof(string));
+    
+            var ageParameter = age.HasValue ?
+                new ObjectParameter("Age", age) :
+                new ObjectParameter("Age", typeof(int));
+    
+            var caddressParameter = caddress != null ?
+                new ObjectParameter("caddress", caddress) :
+                new ObjectParameter("caddress", typeof(string));
+    
+            var cphoneParameter = cphone != null ?
+                new ObjectParameter("cphone", cphone) :
+                new ObjectParameter("cphone", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("custprocedure", custIdParameter, custnameParameter, ageParameter, caddressParameter, cphoneParameter);
+        }
+    
+        [DbFunction("infinitedbEntities", "discount")]
+        public virtual IQueryable<discount_Result> discount()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<discount_Result>("[infinitedbEntities].[discount]()");
+        }
+    
+        public virtual ObjectResult<dislplaydata_Result> dislplaydata(string tbl)
+        {
+            var tblParameter = tbl != null ?
+                new ObjectParameter("tbl", tbl) :
+                new ObjectParameter("tbl", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<dislplaydata_Result>("dislplaydata", tblParameter);
+        }
+    
+        public virtual int displaydata(string tbl)
+        {
+            var tblParameter = tbl != null ?
+                new ObjectParameter("tbl", tbl) :
+                new ObjectParameter("tbl", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("displaydata", tblParameter);
+        }
+    
+        public virtual int divide(Nullable<int> a, Nullable<int> b)
+        {
+            var aParameter = a.HasValue ?
+                new ObjectParameter("a", a) :
+                new ObjectParameter("a", typeof(int));
+    
+            var bParameter = b.HasValue ?
+                new ObjectParameter("b", b) :
+                new ObjectParameter("b", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("divide", aParameter, bParameter);
+        }
+    
+        [DbFunction("infinitedbEntities", "fn_discount")]
+        public virtual IQueryable<fn_discount_Result> fn_discount(string productname)
+        {
+            var productnameParameter = productname != null ?
+                new ObjectParameter("productname", productname) :
+                new ObjectParameter("productname", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<fn_discount_Result>("[infinitedbEntities].[fn_discount](@productname)", productnameParameter);
+        }
+    
+        [DbFunction("infinitedbEntities", "fn_Employees")]
+        public virtual IQueryable<fn_Employees_Result> fn_Employees(string length)
+        {
+            var lengthParameter = length != null ?
+                new ObjectParameter("length", length) :
+                new ObjectParameter("length", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<fn_Employees_Result>("[infinitedbEntities].[fn_Employees](@length)", lengthParameter);
+        }
+    
+        [DbFunction("infinitedbEntities", "fn_getcustomers")]
+        public virtual IQueryable<fn_getcustomers_Result> fn_getcustomers(string a)
+        {
+            var aParameter = a != null ?
+                new ObjectParameter("a", a) :
+                new ObjectParameter("a", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<fn_getcustomers_Result>("[infinitedbEntities].[fn_getcustomers](@a)", aParameter);
+        }
+    
+        [DbFunction("infinitedbEntities", "fn_yrs")]
+        public virtual IQueryable<fn_yrs_Result> fn_yrs(Nullable<int> n)
+        {
+            var nParameter = n.HasValue ?
+                new ObjectParameter("n", n) :
+                new ObjectParameter("n", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<fn_yrs_Result>("[infinitedbEntities].[fn_yrs](@n)", nParameter);
+        }
+    
+        public virtual ObjectResult<getbyaddress_Result> getbyaddress(string a)
+        {
+            var aParameter = a != null ?
+                new ObjectParameter("a", a) :
+                new ObjectParameter("a", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<getbyaddress_Result>("getbyaddress", aParameter);
+        }
+    
+        public virtual ObjectResult<getcustdetails_Result> getcustdetails(Nullable<int> r1, Nullable<int> r2)
+        {
+            var r1Parameter = r1.HasValue ?
+                new ObjectParameter("r1", r1) :
+                new ObjectParameter("r1", typeof(int));
+    
+            var r2Parameter = r2.HasValue ?
+                new ObjectParameter("r2", r2) :
+                new ObjectParameter("r2", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<getcustdetails_Result>("getcustdetails", r1Parameter, r2Parameter);
+        }
+    
+        public virtual ObjectResult<GetEmployees_Result> GetEmployees(Nullable<System.DateTime> startdate, Nullable<System.DateTime> enddate)
+        {
+            var startdateParameter = startdate.HasValue ?
+                new ObjectParameter("startdate", startdate) :
+                new ObjectParameter("startdate", typeof(System.DateTime));
+    
+            var enddateParameter = enddate.HasValue ?
+                new ObjectParameter("enddate", enddate) :
+                new ObjectParameter("enddate", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<GetEmployees_Result>("GetEmployees", startdateParameter, enddateParameter);
+        }
+    
+        public virtual int myproc(string cname, Nullable<int> age)
+        {
+            var cnameParameter = cname != null ?
+                new ObjectParameter("cname", cname) :
+                new ObjectParameter("cname", typeof(string));
+    
+            var ageParameter = age.HasValue ?
+                new ObjectParameter("age", age) :
+                new ObjectParameter("age", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("myproc", cnameParameter, ageParameter);
+        }
+    
+        public virtual ObjectResult<orderprocedure_Result> orderprocedure(Nullable<System.DateTime> d1, Nullable<System.DateTime> d2)
+        {
+            var d1Parameter = d1.HasValue ?
+                new ObjectParameter("d1", d1) :
+                new ObjectParameter("d1", typeof(System.DateTime));
+    
+            var d2Parameter = d2.HasValue ?
+                new ObjectParameter("d2", d2) :
+                new ObjectParameter("d2", typeof(System.DateTime));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<orderprocedure_Result>("orderprocedure", d1Parameter, d2Parameter);
+        }
+    
+        public virtual ObjectResult<pGetProductsByCategory_Result> pGetProductsByCategory(string categoryname)
+        {
+            var categorynameParameter = categoryname != null ?
+                new ObjectParameter("categoryname", categoryname) :
+                new ObjectParameter("categoryname", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<pGetProductsByCategory_Result>("pGetProductsByCategory", categorynameParameter);
+        }
+    
+        public virtual ObjectResult<showbysal_Result> showbysal(Nullable<decimal> salary)
+        {
+            var salaryParameter = salary.HasValue ?
+                new ObjectParameter("salary", salary) :
+                new ObjectParameter("salary", typeof(decimal));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<showbysal_Result>("showbysal", salaryParameter);
+        }
+    
+        public virtual ObjectResult<showdata_Result> showdata()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<showdata_Result>("showdata");
+        }
+    
+        public virtual ObjectResult<sp_getCustomers_Result> sp_getCustomers()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_getCustomers_Result>("sp_getCustomers");
+        }
+    
+        public virtual int sp_getdata()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_getdata");
+        }
+    
+        public virtual ObjectResult<sp_getemp_Result> sp_getemp(Nullable<int> d, Nullable<decimal> sal)
+        {
+            var dParameter = d.HasValue ?
+                new ObjectParameter("d", d) :
+                new ObjectParameter("d", typeof(int));
+    
+            var salParameter = sal.HasValue ?
+                new ObjectParameter("sal", sal) :
+                new ObjectParameter("sal", typeof(decimal));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<sp_getemp_Result>("sp_getemp", dParameter, salParameter);
+        }
+    
+        public virtual int sp_GetEmployeeDet(Nullable<int> empid, ObjectParameter dateofJoin, ObjectParameter deptId)
+        {
+            var empidParameter = empid.HasValue ?
+                new ObjectParameter("Empid", empid) :
+                new ObjectParameter("Empid", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_GetEmployeeDet", empidParameter, dateofJoin, deptId);
+        }
+    
+        public virtual int spAddEmployee(string name, string department, Nullable<decimal> salary)
+        {
+            var nameParameter = name != null ?
+                new ObjectParameter("name", name) :
+                new ObjectParameter("name", typeof(string));
+    
+            var departmentParameter = department != null ?
+                new ObjectParameter("department", department) :
+                new ObjectParameter("department", typeof(string));
+    
+            var salaryParameter = salary.HasValue ?
+                new ObjectParameter("salary", salary) :
+                new ObjectParameter("salary", typeof(decimal));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spAddEmployee", nameParameter, departmentParameter, salaryParameter);
+        }
+    
+        public virtual ObjectResult<spGetdata_Result> spGetdata(Nullable<int> custid, ObjectParameter qty, ObjectParameter pid)
+        {
+            var custidParameter = custid.HasValue ?
+                new ObjectParameter("custid", custid) :
+                new ObjectParameter("custid", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<spGetdata_Result>("spGetdata", custidParameter, qty, pid);
+        }
+    
+        public virtual int spGetOrderDetails(Nullable<int> custid, ObjectParameter qty, ObjectParameter productid)
+        {
+            var custidParameter = custid.HasValue ?
+                new ObjectParameter("custid", custid) :
+                new ObjectParameter("custid", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spGetOrderDetails", custidParameter, qty, productid);
+        }
+    
+        public virtual int spSafeOrderInsert(Nullable<int> orderid, Nullable<int> custid, Nullable<System.DateTime> od, string pro, Nullable<decimal> price, Nullable<int> qty)
+        {
+            var orderidParameter = orderid.HasValue ?
+                new ObjectParameter("orderid", orderid) :
+                new ObjectParameter("orderid", typeof(int));
+    
+            var custidParameter = custid.HasValue ?
+                new ObjectParameter("custid", custid) :
+                new ObjectParameter("custid", typeof(int));
+    
+            var odParameter = od.HasValue ?
+                new ObjectParameter("od", od) :
+                new ObjectParameter("od", typeof(System.DateTime));
+    
+            var proParameter = pro != null ?
+                new ObjectParameter("pro", pro) :
+                new ObjectParameter("pro", typeof(string));
+    
+            var priceParameter = price.HasValue ?
+                new ObjectParameter("price", price) :
+                new ObjectParameter("price", typeof(decimal));
+    
+            var qtyParameter = qty.HasValue ?
+                new ObjectParameter("qty", qty) :
+                new ObjectParameter("qty", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spSafeOrderInsert", orderidParameter, custidParameter, odParameter, proParameter, priceParameter, qtyParameter);
+        }
+    
+        public virtual int spUpdateSalary(Nullable<int> empid, Nullable<decimal> percentage, ObjectParameter updatesalary)
+        {
+            var empidParameter = empid.HasValue ?
+                new ObjectParameter("empid", empid) :
+                new ObjectParameter("empid", typeof(int));
+    
+            var percentageParameter = percentage.HasValue ?
+                new ObjectParameter("percentage", percentage) :
+                new ObjectParameter("percentage", typeof(decimal));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("spUpdateSalary", empidParameter, percentageParameter, updatesalary);
+        }
+    
+        [DbFunction("infinitedbEntities", "test")]
+        public virtual IQueryable<test_Result> test()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.CreateQuery<test_Result>("[infinitedbEntities].[test]()");
+        }
     }
 }

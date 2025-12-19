@@ -1,0 +1,129 @@
+1)display all the records from customers who made a purchase of mobile
+
+query:
+
+select * from customers where custid IN
+(select custid from orders where product='Mobile')
+
+--------------------------------------------------------------------------
+2)display all the records from customer who made a purchase of mobile , tablet, laptop
+
+query:
+
+select * from customers where custid IN
+(select custid from orders where product IN('Mobile','Laptop','Tablet'))
+
+--------------------------------------------------------------------------
+3)display the list of customers who never made any purchase
+
+query:
+
+select * from customers where custid NOT IN 
+(select custid from orders);
+
+-----------------------------------------------------------------------
+4)display the second highest age from customers (do not use top keyword)
+
+query:
+
+select max(age) from customers where 
+age<(select max(age) from customers);
+
+-----------------------------------------------------------------------
+
+5)display the list from orders where customers stays in bangalor
+
+query:
+
+select * from orders where custid IN
+(select custid from customers where caddress='Bangalore');
+
+--------------------------------------------------------------------------
+
+6)display list of customer who made lowest purchase (in terms of quantity)
+
+query:
+
+select * from customers where custid IN
+(select custid from orders where
+qty=(select min(qty) from orders))
+
+---------------------------------------------------------------------------
+
+7). display the list of customer who's age is greater then surya's age ( but we dont know surya's age)
+
+query:
+
+select * from customers where 
+age>(select age from customers where custname='surya');
+
+--------------------------------------------------------------------------
+
+8)update customer table where
+custid =1's age = custid=2's age
+
+query:
+
+update customers 
+set age=(select age from customers where custid=2)
+where custid=1;
+
+-------------------------------------------------------------------
+9)Display those details who made orders in December of any year
+
+query:
+
+select * from customers 
+where custid IN (select custid from orders 
+where month(orderdate)=12);
+
+-------------------------------------------------------------------------
+10)Show all orders made before first half of the month (before the 16th of the 
+month who does not reside in bangalore).
+
+query:
+
+select * from orders where 
+day(orderdate)<16 and custid in(select custid from customers 
+where caddress NOT IN ('Bangalore'));
+
+-----------------------------------------------------------------------------
+11)Display list of customers from delhi and Bangalore who made purchase of 
+less than 3 product
+
+query:
+
+select * from customers where custid in 
+(select custid from orders where qty<3)
+and caddress in ('Delhi','Bangalore');
+
+------------------------------------------------------------------------
+
+12)Display list of orders where price is greater than average price
+
+query:
+
+select * from orders where price >
+(select avg(price) from orders);
+
+-------------------------------------------------------------------------
+
+13)update orders table increasing price by 10% for customers residing in 
+Bangalore and who have purchased books.
+
+query:
+
+update orders 
+set price=price*1.10 where 
+custid in (select custid from customers where caddress='Bangalore')
+and product='Laptop';
+
+---------------------------------------------------------------------------
+14)Display orderdetails in following format
+OrderID-Date Total(price*qty)
+100-1/1/2000 50
+
+query:
+
+select concat(orderid,'-',orderdate) as [orderID-Date],
+(price*qty) as total from orders;

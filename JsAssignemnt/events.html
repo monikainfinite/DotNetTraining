@@ -1,0 +1,28 @@
+<!-- Develop a code to change the color of div tag based on color selected from drop down
+list -->
+<html>
+    <head>
+    <style>
+        div{
+            border:2px solid black;
+         
+        }
+    </style>
+    </head>
+    <body>
+        <h3>select a color:</h3>
+        <select id="color" onchange="changecolor()">
+            <option value="">--select </option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+        </select>
+        <div id="div1">This is a div tag</div>
+        <script>
+            function changecolor(){
+                var colorval=document.getElementById("color").value;
+                document.getElementById("div1").style.backgroundColor=colorval;
+            }
+        </script>
+    </body>
+</html>

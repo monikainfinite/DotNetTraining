@@ -15,10 +15,30 @@ namespace adonet_ef
             //it should display all emp from database
             var res=from t in dc.newEmployees
                     select t;
-            foreach (var e in res)
+            //by default when u write a linq query it will also load related data
+            //is it possible => it should not load related data
+            //we can done it by lazy loading + eager loading
+            //lazy loading:it will not load
+            //eager :it will load
+            var res1 = from t in dc.newDepartments
+                     select t;
+                    //or we can use joins to dispaly both emp and dept
+
+            //foreach (var e in res)
+            //{
+            //    Console.WriteLine($"{e.EmpID} {e.EmpName} {e.DateOfJoin} {e.Salary} {e.DeptID}");
+            //    Console.WriteLine("===============");
+            //    Console.WriteLine(e.newDepartment.DeptID + " " + e.newDepartment.DeptName);
+            //    Console.WriteLine("============");
+            //}
+            foreach(var item in res1)
             {
-                Console.WriteLine($"{e.EmpID} {e.EmpName} {e.DateOfJoin} {e.Salary} {e.DeptID}");
-                Console.WriteLine("===============");
+                Console.WriteLine(item.DeptName);
+                foreach(var item1 in item.newEmployees)
+                {
+                    Console.WriteLine(item1.EmpName + " " + item1.Salary);
+                }
+                Console.WriteLine("============");
             }
         }
         public void searchRecord()
@@ -149,6 +169,34 @@ namespace adonet_ef
             foreach( var e in res)
             {
                 Console.WriteLine($"{e.EmpID} {e.EmpName} {e.Salary} {e.Bonussal}");
+            }
+        }
+        public void SqlqueryDemo()
+        {
+            //how to write sql query?
+           var res= dc.Database.SqlQuery<newEmployee>("select * from newemployee where empname like 'M%'");
+
+            foreach (var e in res)
+            {
+                Console.WriteLine($"{e.EmpID} {e.EmpName} {e.DateOfJoin} {e.Salary} {e.DeptID}");
+
+            }
+        }
+        public void DMLDemo()
+        {
+            //for insert and delete
+            int ra = dc.Database.ExecuteSqlCommand("delete  from newEmployee where empname like 'M%'");
+            Console.WriteLine("total records" + ra);
+        }
+        public void spdemo()
+        {
+            //how to call the procedure
+            //use procedure when u are using join and subqueries heavily
+            var res = dc.showbysal(60000);
+            foreach(var e in res)
+            {
+                Console.WriteLine($"{e.EmpID} {e.EmpName} {e.DateOfJoin} {e.Salary} {e.DeptID}");
+
             }
         }
     }
