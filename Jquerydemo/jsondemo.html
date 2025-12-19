@@ -1,0 +1,87 @@
+<html>
+
+<input type="button" id="b1" value="read json data"/>
+<input type="button" id="b2" value="convert to javascript to json"/>
+<input type="button" id="b3" value="read json file"/>
+
+
+<div id="d1"></div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script>
+var ob = '{ "studentid":100,"studentname":"pooja","age":21}';
+
+
+$("#b1").click(function()
+{
+// how to convert json to javascript object
+
+// if u want to read any json data. first convert to javascript object
+  
+var res = JSON.parse(ob);
+console.log(res.studentname);
+
+
+
+}
+)  
+
+
+$("#b2").click(function()
+{
+// how to convert javascript object  to json
+  
+var ob =
+{
+studentid:200,
+studentname:'kanishka',
+age:22
+}
+
+
+var res = JSON.stringify(ob);
+console.log(res);
+
+}
+)  
+
+
+$("#b3").click(function()
+{
+// how to call json file?
+$.ajax({
+ type: "GET",
+ url: "prods.json",
+ success: function(result)  // now result variable will have all the data
+ {
+	console.log(result);
+
+	var output="<table><thead><tr><th>PName</th><th>Price</th><th>Image</th></thead><tbody>";
+
+
+ for (var i in result)
+ {
+ output+="<tr><td>" + result[i].pname + "</td><td>" + result[i].price + "</td><td><img src='" + result[i].image + "'/></td></tr>";
+ }
+ output+="</tbody></table>";
+ 
+ $("#d1").html(output);
+
+ }
+
+})
+
+});
+
+
+
+
+</script>
+
+
+
+
+
+
+</html>

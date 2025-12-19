@@ -1,0 +1,205 @@
+<html>
+    <head>
+        <style>
+            #div3{
+                background-color:orange;
+                border:2px solid red;
+                color:white;
+            }
+            .error{
+                color:red;
+            }
+            .sucess{
+                color:green;
+            }
+            #div4{
+                border:2px solid black;
+                background-color:red;
+                width:100x;
+                height:100px;
+
+            }
+            #div5{
+                border:2px solid red;
+                width:200px;
+                height:50px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+        <h1>Copying content</h1>
+        <div id="div1">This is first div tag div</div>
+        <div id="div2">THe second div tag</div>
+        <button id="b1">Copy content</button>
+        <hr>
+        <h1>hide element</h1>
+        <div id ="div3">Click this div to hide</div>
+        <hr>
+        <img id="img1" src="tv.jpg">
+        <br><br>
+        <button id="b2">change Image</button>
+        <hr>
+        TextBox1:<input class="i1" type="text"><br><br>
+        TextBox2:<input class="i1" type="text"><br><br>
+        TextBox3:<input class="i1" type="text"><br><br>
+        <button id="b3">Change color</button>
+        <hr>
+       
+        <h1>Login Page</h1>
+        Username:<input type="text" id="username"><br><br>
+        Password:<input type="password" id="password"><br><br>
+        <button id="loginbtn">Login</button>
+        <p id="msg"></p>
+        <hr>
+       Input: <input id="input1" type="text"><br><br>
+        <hr>
+        <div id="div4">This is example of mouseover and mouseout </div><br>
+        <hr>
+
+        <button id="b5">Change h1 </button><br><br>
+        <hr>
+        <button id="b6">Count h1</button><br><br>
+        <p id="h1"></p>
+       <button id="b7">Count div</button><br><br>
+         <p id="div"></p>
+        <button id="b8">Count p</button><br><br>
+         <p id="p"></p>
+         <hr>
+         <img id="img2" src="watch.jpg"><br><br>
+         <button id="b9">change height and width</button><br>
+         <hr>
+         <h1>select a country</h1>
+         <select id="country">
+        <option value="">select</option>
+        <option value="India">India</option>
+       <option value="Australia">Australia</option>
+    <option value="China">China</option>
+         </select><br><br>
+         <div id="div5"></div><br>
+         <hr>
+         <h2>Enter your details</h2>
+         <form id="myform">
+            Name:<input type="text" id="name"><br><br>
+            Gender:<input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female<br><br>
+            Designation:
+            <select id="designation">
+                <option value="">select</option>
+               <option value="Developer">Developer</option>
+                <option value="Tester">Tester</option>
+                <option value="Manager">Manager</option>
+
+            </select><br>
+            Address:<br>
+            <textarea id="address" rows="4" cols="50"></textarea><br><br>
+            <button type="button" id="b10">Display</button>
+         </form>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+        <script >
+            //1.copy content
+            $("#b1").click(function(){
+                $("#div2").html($("#div1").html());
+            });
+            //2.hide element
+            $("#div3").click(function(){
+                $("#div3").hide();
+            })
+            //3.change image
+            $("#b2").click(function(){
+                $("#img1").attr("src","watch.jpg");
+            })
+            //4.chnage color
+            $("#b3").click(function(){
+                $(".i1").css({"background-color":"blue","color":"white"});
+            })
+            //5.login validation
+            $("#loginbtn").click(function(){
+                var uname=$("#username").val();
+                var pass=$("#password").val();
+                if(uname==""||pass==""){
+                    $("#msg").text("please enter username and password").addClass("error");
+
+                }
+                else if(uname=="admin" && pass=="1234"){
+                    $("#msg").text("Login sucessful").removeClass("error").addClass("sucess");
+
+                }
+                else{
+                    $("#msg").text("Invalid uname and password").removeClass("sucess").addClass("error");
+
+                }
+            });
+            //6.chnage bgcolor when onfocus
+            $("#input1").focus(function(){
+                $(this).css({
+                    "background-color":"red",
+                    "border":"2px solid yellow"
+                })});
+                //7.mouse over nad mouse out
+                $("#div4").mouseover(function(){
+                    $(this).css("background-color","yellow").text("this is mouse over example");
+                   
+                });
+                        $("#div4").mouseout(function(){
+                    $(this).css("background-color","violet").text("this is mouse out example");
+
+                });
+              //8.apply bg to all h1s in div
+              $("#b5").click(function(){
+                $("div h1").css("background-color","yellow");
+              })
+              //count
+              $("#b6").click(function(){
+                $("#h1").text("number of h1 eleemts :"+$("h1").length);
+              })
+               $("#b7").click(function(){
+                $("#div").text("number of div eleemts :"+$("div").length);
+              })
+               $("#b8").click(function(){
+                $("#p").text("number of p eleemts :"+$("div").length);
+              })
+              $("#b9").click(function(){
+                $("#img2").attr({"width":400,"height":300});
+              })
+              //display values
+              $("#country").change(function(){
+                var sel=$(this).val();
+                if(sel!==""){
+                    $("#div5").text(sel);}
+                    else{
+                        $("#div5").text("");
+                    }
+              })
+                
+               //display detaisl on new window
+               $("#b10").click(function(){
+                var name=$("#name").val();
+                var gender=$("input[name='gender']:checked").val();
+                var des=$("#designation").val();
+                var address=$("#address").val();
+                var newwin=window.open("","");
+                newwin.document.write("<h2>Form details</h2>");
+                newwin.document.write("<p>Name "+name+"</p>");
+                 newwin.document.write("<p>Gender "+gender+"</p>");
+                 newwin.document.write("<p>Designation "+des+"</p>");
+                 newwin.document.write("<p>Address"+address+"</p>");
+               })
+        </script>
+    </body>
+</html>

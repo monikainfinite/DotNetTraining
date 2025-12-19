@@ -1,0 +1,15 @@
+[{
+ "pname": "tv",
+ "price": "20000",
+ "image": "tv.jpg"
+}, 
+{
+ "pname": "car",
+ "price": "200000",
+ "image": "car.jpg"
+},
+{
+ "pname": "watch",
+ "price": "9000",
+ "image": "watch.jpg"
+}]

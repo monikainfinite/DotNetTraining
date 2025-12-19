@@ -1,0 +1,145 @@
+<html>
+<style>
+.mycls
+{
+background-color:steelblue;
+color:white;
+}
+</style>
+<input type="button" id="b1" value="append"/>
+<input type="button" id="b2" value="prepend"/>
+<input type="button" id="b3" value="before"/>
+<input type="button" id="b4" value="after"/>
+<input type="button" id="b5" value="hide"/>
+<input type="button" id="b6" value="show"/>
+<input type="button" id="b7" value="fadein"/>
+<input type="button" id="b8" value="fadeout"/>
+<input type="button" id="b9" value="fadeto"/>
+<input type="button" id="b10" value="chaining"/>
+<input type="button" id="b11" value="Add CSS"/>
+<input type="button" id="b12" value="Remove CSS"/>
+<input type="button" id="b13" value="Add CSS Manually"/>
+<input type="button" id="b14" value="Position"/>
+<input type="button" id="b15" value="alternate"/>
+<input type="button" id="b16" value="first"/>
+<input type="button" id="b17" value="slice"/>
+<input type="button" id="b18" value="toggle"/>
+
+<br>
+<div id="d1" style="border:3px solid blue">
+ the content of div goes here
+</div>
+<ul>
+<li>Sai</li>
+<li>Logesh</li>
+<li>Aashritha</li>
+<li>Deepa</li>
+<li>Saktivel</li>
+<li>Fatima</li>
+</ul>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script>
+
+$("#b1").click(function(){
+
+$("#d1").append("<p><b><font color='red'>Good morning!!</font></b></p>");
+
+})
+
+
+$("#b2").click(function(){
+
+$("#d1").prepend("<p><b><font color='blue'>Have a great day!!</font></b></p>");
+
+})
+
+$("#b3").click(function(){
+
+$("#d1").before("<b><font color='blue'>Have a great day!!</font></b>");
+
+})
+
+$("#b4").click(function(){
+
+$("#d1").after("<b><font color='blue'>Have a great day!!</font></b>");
+
+})
+
+$("#b5").click(function(){
+
+$("#d1").hide(3000)  // seconds to hide
+
+})
+
+$("#b6").click(function(){
+
+$("#d1").show(3000)  // seconds to show
+
+})
+
+$("#b7").click(function(){
+
+$("#d1").fadeOut(3000) 
+
+})
+
+$("#b8").click(function(){
+
+$("#d1").fadeIn(3000) 
+
+})
+
+$("#b9").click(function(){
+
+$("#d1").fadeTo(3000,0.3) 
+
+})
+
+$("#b10").click(function(){
+
+$("#d1").show(3000).hide(2000).show(5000).hide(2000);  
+
+})
+$("#b11").click(function(){
+$("#d1").addClass("mycls");
+})
+
+
+$("#b12").click(function(){
+$("#d1").removeClass("mycls");
+})
+
+$("#b13").click(function(){
+//$("#d1").css("background","yellow").css("font-size","50px");
+$("#d1").css({"background-color":"red","font-size":"30px"});
+})
+
+$("#b14").click(function(){
+$("li").eq(2).addClass("mycls");
+
+})
+
+$("#b15").click(function(){
+$("li:even").addClass("mycls");
+
+})
+
+$("#b16").click(function(){
+$("li:first").addClass("mycls");
+
+})
+
+$("#b17").click(function(){
+$("li").slice(2,5).addClass("mycls");
+
+})
+$("#b18").click(function(){
+$("#d1").toggle(2000).css({"background-color":"red","font-size":"30px"});
+
+
+})
+
+</script>
+
+</html>
